@@ -1,0 +1,40 @@
+---
+title: "HTML page"
+type: learn-subsection
+weight: 1
+tags: [rmarkdown, distill, tufte, bookdown, pagedown]
+categories: [html_page]
+formats: [html_page]
+description: | 
+  Generate HTML pages with rich built-in features and styling options.
+---
+{{< packages "rmarkdown" >}}
+
+{{< packages "distill" >}}
+
+{{< packages "bookdown" >}}
+
+{{< packages "tufte" >}}
+
+{{< packages "flexdashboard" >}}
+
+{{< packages "pagedown" >}}
+
+```
+output:
+  rmarkdown::html_document: default
+  bookdown::html_document2: default
+  tufte::tufte_html: default
+  flexdashboard::flex_dashboard: default
+  distill::distill_article: default
+  pagedown::html_paged: default
+```
+
+
+`r xfun::embed_file(here::here("static/explore-examples/distill_article.Rmd"))`
+
+
+
+```{r echo=FALSE}
+knitr::include_url("/explore-examples/distill_article.html")
+```

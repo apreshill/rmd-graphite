@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+
+
+
+<div class="band padForHeader pushFooter">
+  <div class="bandContent">
+    <div class="full splitColumns withMobileMargins">
+
+      <div>
+        <div class="article-title">{{ .Title | title }}</div>
+        <div>{{ .Params.description | markdownify }}</div>
+
+{{ range $index, $element := .Sections }}
+<h2>{{ .Title | title }}</h2>  
+<p>{{ default .Params.Description | markdownify }}</p>
+<div class="card-deck">
+  {{ range first 5 .Pages.ByWeight }}
+  <div class="card">
+    {{ $thumb := (.Resources.ByType "image").GetMatch "*thumbnail*" }}
+    {{ with $thumb }}
+    <img src="{{ .RelPermalink }}" class="card-img-top" aria-hidden="true">
+    {{ end }}
+    <div class="card-body">
+      <h3 class="card-title">{{ .Title | title }}</h3>
+      <p class="card-text">{{ .Description | markdownify }}</p>
+    </div>
+    <div class="card-footer">
+      <h1 class="learning-objective">
+        <a href="{{ .RelPermalink }}">hello</a>
+      </h1>
+        {{ range (.GetTerms "tags") }}
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
+
+      </div>
+    </div>
+  </div>  <!-- bandContent -->
+</div> <!-- band -->
+
+{{ end }}

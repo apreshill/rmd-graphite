@@ -1,0 +1,7 @@
+{{ $pkg := index .Site.Data.packages (.Get 0) }}
+
+<ul>
+{{ with $pkg.url_docs }}
+  <li><a href="{{ $pkg.url_docs }}" alt="Link to package documentation">{{ . | safeHTML }}</a></li>
+{{ end }}
+</ul>

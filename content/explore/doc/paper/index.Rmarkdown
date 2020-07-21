@@ -1,0 +1,10 @@
+---
+title: "Journal article"
+weight: 4
+tags: [rticles, pagedown]
+categories: [single]
+description: | 
+  Get started by learning how to specify and train a model using tidymodels.
+---
+
+pagedown::jss_paged
