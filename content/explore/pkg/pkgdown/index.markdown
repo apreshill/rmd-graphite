@@ -4,7 +4,7 @@ weight: 1
 tags: [pkgdown]
 categories: [multi]
 description: | 
-  Get started by learning how to specify and train a model using tidymodels.
+  Build a documentation website for your R package.
 url_thumbnail: https://ewenme.github.io/ghibli/
 ---
 

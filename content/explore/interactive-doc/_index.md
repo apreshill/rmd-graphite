@@ -1,6 +1,6 @@
 ---
 title: Interactive documents
-description: "Infuse interactive elements into R Markdown with htmlwidgets or the shiny package."
+description: "Infuse interactive elements into HTML-based R Markdown output formats."
 weight: 2
 ---
 

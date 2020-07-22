@@ -7,22 +7,32 @@
   <div class="bandContent">
     <div class="full splitColumns withMobileMargins">
 
-      <div>
+      <div class="column85">
         <div class="article-title">{{ .Title | title }}</div>
         <div>{{ .Params.description | markdownify }}</div>
 
+<!-- range across sections-->
 {{ range $index, $element := .Sections }}
-<h2>{{ .Title | title }}</h2>  
-<p>{{ default .Params.Description | markdownify }}</p>
+       
+<!--anchorizing all subsection links-->
+<h2 style="margin-top: .01em;" id="{{ anchorize (.Title) }}">{{ .Title | safeHTML }}
+  <a href="#{{ anchorize (.Title) }}"></a>
+</h2>
+
+<p>{{ default .Params.Description | markdownify }}
+  <a class="readMore" href="{{ .RelPermalink }}">See all &#187;</a>
+</p>
+
 <div class="card-deck">
-  {{ range first 5 .Pages.ByWeight }}
+  <!-- range across pages WITHIN sections-->
+  {{ range first 4 .Pages.ByWeight }}
   <div class="card">
     {{ $thumb := (.Resources.ByType "image").GetMatch "*thumbnail*" }}
     {{ with $thumb }}
     <img src="{{ .RelPermalink }}" class="card-img-top" aria-hidden="true">
     {{ end }}
     <div class="card-body">
-      <h3 class="card-title">{{ .Title | title }}</h3>
+      <h1 class="card-title learning-objective">{{ .Title | title }}</h1>
       <p class="card-text">{{ .Description | markdownify }}</p>
     </div>
     <div class="card-footer">
@@ -38,8 +48,25 @@
 </div>
 {{ end }}
 
-      </div>
+      </div> <!-- column85 -->
+      
+<!-- begin right sidebar with page sections -->
+<div class="column16">
+  <div class="section">
+    <div class="section hideOnMobile">
+      <div class="start sectionTitle">On this page</div>
+      <nav id="TableOfContents">
+        <ul>
+        {{ range $index, $element := .Sections }}
+          <li><a href="#{{ anchorize (.Title) }}">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+      </nav>
     </div>
+  </div>
+</div>
+      
+    </div> <!-- full splitColumns -->
   </div>  <!-- bandContent -->
 </div> <!-- band -->
 

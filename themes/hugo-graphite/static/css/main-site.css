@@ -2004,9 +2004,10 @@ html {
   color: black; 
   opacity: 75%;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 0.9em;
   letter-spacing: 1pt;
   display: inline-block;
+  line-height: 1.5em;
 }
 
 .single-learning-objective-text {

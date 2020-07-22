@@ -4,7 +4,7 @@ weight: 4
 tags: [rticles, pagedown]
 categories: [single]
 description: | 
-  Get started by learning how to specify and train a model using tidymodels.
+  Write manuscripts with custom LaTeX formats and templates.
 ---
 
 pagedown::jss_paged

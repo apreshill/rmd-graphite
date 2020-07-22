@@ -1,4 +1,4 @@
 ---
 title: Explore
-description: "Find outputs and formats you can create using the R Markdown ecosystem."
+description: "Find out more about what you can create using the R Markdown ecosystem."
 ---
