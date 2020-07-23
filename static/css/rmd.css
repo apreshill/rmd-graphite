@@ -6,3 +6,7 @@ p a {
 	margin-bottom: 10px;
 	letter-spacing: 1pt;
 }
+
+.event {
+  background-color: #e6f3fc;
+}

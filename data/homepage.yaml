@@ -1,0 +1,14 @@
+bandtwo:
+- url: /start/
+  title: Get started
+  icon: fa-meteor
+  icon_pack: fas
+  what: |
+    Learn the basics with our quick tour of R Markdown.
+
+- url: /explore/
+  title: Explore
+  icon: fa-search-plus
+  icon_pack: fas
+  what: |
+    Find out what you can create using the R Markdown ecosystem.

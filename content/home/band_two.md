@@ -1,6 +1,9 @@
 ---
-title: "Learn the tidyverse"
+title: "Learn R Markdown"
+image: cover.png
+alt_text: "R Markdown Definitive Guide book cover"
+url_image: https://www.amazon.com/Markdown-Definitive-Guide-Chapman-Hall/dp/1138359424
 ---
 
-See how the tidyverse makes data science faster, easier and more fun with "R for Data Science". Read it [online](http://r4ds.had.co.nz/), buy [the book](http://amzn.to/2aHLAQ1) or try another [resource](/learn/) from the community.
+Learn about the R Markdown ecosystem for authoring computational documents with "R Markdown: The Definitive Guide". Read it [online](https://bookdown.org/yihui/rmarkdown/) or buy [the book](https://www.amazon.com/Markdown-Definitive-Guide-Chapman-Hall/dp/1138359424).
    
