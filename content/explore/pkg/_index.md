@@ -1,6 +1,6 @@
 ---
 title: Package documentation
-description: "Learn how to go farther with tidymodels in your modeling and machine learning projects."
+description: "Make the most of R Markdown inside your R packages to power your documentation."
 weight: 4
 ---
 

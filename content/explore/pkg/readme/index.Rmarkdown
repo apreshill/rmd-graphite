@@ -1,10 +1,10 @@
 ---
-title: "GitHub document"
+title: "Package README"
 weight: 3
 tags: [rmarkdown]
 categories: [single]
 description: | 
-  Get started by learning how to specify and train a model using tidymodels.
+  Knit a `README.Rmd` to a markdown document that renders on GitHub.
 url_thumbnail: hhttps://github.com/rstudio/gt/blob/master/README.Rmd
 ---
 
