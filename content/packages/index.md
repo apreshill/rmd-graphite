@@ -75,6 +75,8 @@ The tidyverse also includes many other packages with more specialised usage. The
 
 ### Extras
 
++ [asciicast](https://github.com/r-lib/asciicast)
+
 + [kableExtra](http://haozhu233.github.io/kableExtra/)
 
 + The [countdown](https://pkg.garrickadenbuie.com/countdown/) package makes it easy to drop in a simple countdown timer in slides and HTML documents written in R Markdown.

@@ -7,6 +7,28 @@ p a {
 	letter-spacing: 1pt;
 }
 
-.event {
-  background-color: #e6f3fc;
+#homeContent .blurb .event {
+	border: 1pt solid #79beee80;
+	background-color: #f5e2e800;
+}
+
+#homeContent .blurb .event .eventTitle, 
+#homeContent .blurb .event .eventTitle a {
+	text-transform: uppercase;
+	letter-spacing: 2pt;
+	font-weight: bold !important;
+	color: #096b72;
+	font-size: 1.0rem;
+	font-family: Libre Baskerville;
+}
+
+#homeContent .blurb .event .eventTitle a:hover {
+	text-decoration: none;
+	color: #405359;
+}
+
+#homeContent .event .eventDetails {
+	font-size: 1.1rem;
+	line-height: 2rem;
+	font-weight: 400;
 }
