@@ -1,13 +1,13 @@
 ---
 title: "Analyze. Share. Reproduce."
 col0:
-  row1: "RStudio"
-  row2: ""
-  row3: "tidyverse"
+  row1: "rmarkdown"
+  row2: "knitr"
+  row3: "flexdashboard"
 col2:
-  row2: "shiny"
-  row3: ""
-  row4: "rmarkdown"
+  row2: "pkgdown"
+  row3: "bookdown"
+  row4: "blogdown"
 ---
 
 Your data tells a story. Tell it with R Markdown. Turn your analyses into high quality documents, reports, presentations and dashboards.
