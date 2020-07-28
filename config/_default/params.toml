@@ -14,7 +14,7 @@ twitter_image = "hex-tidyverse.png"
 custom_css = ["rmd.css", "rmd-fonts.css", "bootstrap-cards.css"]
 
 # Define base hex url for index page (where the stickers link out to)
-hex_base_url = ".tidyverse.org"
+hex_base_url = ""
 
 # Define "news" as both articles and events
 mainSections = ["articles", "events"]
@@ -128,5 +128,12 @@ MathJaxVersion = "2.7.1"
     border_color = "#a19ea936"
     background = "#eab0c41a"
     
-    
+[test_drive]
+# For test drive button colors
+    text = "#405359"
+    button = "#E6F3FC"
+    outline = "#096B72"
+    hover_text = "#fff"
+    hover_button = "#096B72"
+    hover_outline = "#096B72"   
 
