@@ -3,7 +3,7 @@ rmarkdown:
   desc: Create computational documents that knit together text, code, results, and figures into polished outputs that are easy to read and share.
   url_git: https://github.com/rstudio/rmarkdown
   url_docs: 'https://rmarkdown.rstudio.com/docs/'
-  url_cran: https://cran.r-project.org/web/packages/rmarkdown/index.html
+  url_cran: https://cloud.r-project.org/web/packages/rmarkdown/index.html
   url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/rmarkdown.png
   name: rmarkdown
   extend: false
@@ -12,7 +12,7 @@ flexdashboard:
   desc: Turn a single R Markdown document into an interactive dashboard to help others see, explore, and gain insights from your analyses.
   url_git: https://github.com/rtudio/flexdashboard
   url_docs: 'https://rmarkdown.rstudio.com/flexdashboard/'
-  url_cran: https://cran.r-project.org/web/packages/flexdashboard/index.html
+  url_cran: https://cloud.r-project.org/web/packages/flexdashboard/index.html
   url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/flexdashboard.png
   name: flexdashboard
   base: false
@@ -21,7 +21,7 @@ tufte:
   desc: Create HTML pages, books, and PDFs with sidenotes, margin figures, and typography in the style of Edward Tufte. 
   url_git: https://github.com/rstudio/tufte
   url_docs: 'https://rstudio.github.io/tufte/'
-  url_cran: https://cran.r-project.org/web/packages/tufte/index.html
+  url_cran: https://cloud.r-project.org/web/packages/tufte/index.html
   url_hex: 
   name: tufte
 revealjs:
@@ -29,7 +29,7 @@ revealjs:
   desc: Create HTML5 slides based on the JavaScript library reveal.js. 
   url_git: https://github.com/rstudio/revealjs
   url_docs: 'https://bookdown.org/yihui/rmarkdown/revealjs.html'
-  url_cran: https://cran.r-project.org/web/packages/revealjs/index.html
+  url_cran: https://cloud.r-project.org/web/packages/revealjs/index.html
   url_hex: 
   name: revealjs
 xaringan:
@@ -37,64 +37,72 @@ xaringan:
   desc: Create HTML5 slides based on the JavaScript library remark.js. 
   url_git: https://github.com/yihui/xaringan
   url_docs: 'https://bookdown.org/yihui/rmarkdown/xaringan.html'
-  url_cran: https://cran.r-project.org/web/packages/xaringan/index.html
+  url_cran: https://cloud.r-project.org/web/packages/xaringan/index.html
   url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png
   name: xaringan
-pkgdown:
+blastula:
   weight: 50
+  desc: Easily send great-looking HTML email messages from R.
+  url_git: https://github.com/rich-iannone/blastula
+  url_docs: 'https://rich-iannone.github.io/blastula/'
+  url_cran: https://cloud.r-project.org/package=blastula
+  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/blastula.png
+  name: blastula
+pkgdown:
+  weight: 60
   desc: Designed to make it quick and easy to build a website to document your R package.
   url_git: https://github.com/r-lib/pkgdown
   url_docs: 'https://pkgdown.r-lib.org/'
-  url_cran: https://cran.r-project.org/web/packages/pkgdown/index.html
+  url_cran: https://cloud.r-project.org/web/packages/pkgdown/index.html
   url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/pkgdown.png
   name: pkgdown
 bookdown:
-  weight: 60
+  weight: 70
   desc: Write books and long-form articles/reports with R Markdown.
   url_git: https://github.com/rstudio/bookdown
   url_docs: 'https://bookdown.org/yihui/bookdown/'
-  url_cran: https://cran.r-project.org/web/packages/bookdown/index.html
+  url_cran: https://cloud.r-project.org/web/packages/bookdown/index.html
   url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/bookdown.png
   name: bookdown
 blogdown:
-  weight: 70
+  weight: 80
   desc: Build highly flexible and customized websites or blogs with the Hugo static site generator.
   url_git: https://github.com/rstudio/blogdown
   url_docs: 'https://bookdown.org/yihui/blogdown/'
-  url_cran: https://cran.r-project.org/web/packages/blogdown/index.html
+  url_cran: https://cloud.r-project.org/web/packages/blogdown/index.html
   url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/blogdown.png
   name: blogdown
 learnr:
-  weight: 80
+  weight: 90
   desc: Turn any R Markdown document into a hands-on, interactive tutorial.  
   url_git: https://github.com/rstudio/learnr
   url_docs: 'https://rstudio.github.io/learnr/'
-  url_cran: https://cran.r-project.org/web/packages/learnr/index.html
+  url_cran: https://cloud.r-project.org/web/packages/learnr/index.html
   url_hex: 
   name: learnr
 rticles:
-  weight: 90
+  weight: 100
   desc: Write scientific journal articles with custom LaTeX templates for R Markdown.
   url_git: https://github.com/rstudio/rticles
   url_docs: 'https://bookdown.org/yihui/rmarkdown/journals.html'
-  url_cran: https://cran.r-project.org/web/packages/rticles/index.html
+  url_cran: https://cloud.r-project.org/web/packages/rticles/index.html
   url_hex: 
   name: rticles
 distill:
-  weight: 100
+  weight: 110
   desc: Distill for R Markdown is a web publishing format optimized for scientific and technical communication.
   url_git: https://github.com/rstudio/distill
   url_docs: 'https://rstudio.github.io/distill/'
-  url_cran: https://cran.r-project.org/web/packages/distill/index.html
+  url_cran: https://cloud.r-project.org/web/packages/distill/index.html
   url_hex: 
   name: distill
 pagedown:
-  weight: 110
+  weight: 120
   desc: Paginate the HTML Output of R Markdown with CSS for print. You only need a modern web browser (e.g., Google Chrome) to generate PDF. No need to install LaTeX to get beautiful PDFs.
   url_git: https://github.com/rstudio/pagedown
   url_docs: 'https://pagedown.rbind.io/'
-  url_cran: https://cran.r-project.org/web/packages/pagedown/index.html
-  url_hex: https://user-images.githubusercontent.com/163582/51942716-66be4180-23dd-11e9-8dbc-fdb4f465d1c2.png
+  url_cran: https://cloud.r-project.org/web/packages/pagedown/index.html
+  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/pagedown.png
   name: pagedown
 
   
