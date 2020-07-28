@@ -9,12 +9,8 @@
               {{ end }}
             </div>
             <div id="logos">
-              {{ with .Param "footer.github_url" }}
-              <a href="{{ . }}" class="footerLogo gitHub" aria-label="Tidyverse GitHub organization"></a>
-              {{ end }}
-              {{ with .Param "footer.twitter_url" }}
-              <a href="{{ . }}" class="footerLogo twitter" aria-label="rstats hashtag on twitter.com"></a>
-              {{ end }}
+              <a href="{{ .Param "footer.github_url" }}" class="footerLogo gitHub" aria-label="Tidyverse GitHub organization"></a>
+              <a href="{{ .Param "footer.twitter_url" }}" class="footerLogo twitter" aria-label="rstats hashtag on twitter.com"></a>
             </div>
           </div>
         </div>
