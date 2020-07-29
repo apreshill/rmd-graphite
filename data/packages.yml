@@ -43,8 +43,8 @@ xaringan:
 blastula:
   weight: 50
   desc: Easily send great-looking HTML email messages from R.
-  url_git: https://github.com/rich-iannone/blastula
-  url_docs: 'https://rich-iannone.github.io/blastula/'
+  url_git: https://github.com/rstudio/blastula
+  url_docs: 'https://rstudio.github.io/blastula/'
   url_cran: https://cloud.r-project.org/package=blastula
   url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/blastula.png
   name: blastula
