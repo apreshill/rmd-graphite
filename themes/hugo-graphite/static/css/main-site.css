@@ -542,7 +542,7 @@ a {
   .splitColumns .column25 {
     width: 23%; }
   .splitColumns .column16 {
-    width: 16.66666667%; }
+    width: 16.666666667%; }
     .splitColumns .column25 .columnImage {
       width: 276px; }
   .splitColumns .columnImage {
@@ -555,7 +555,8 @@ a {
   .splitColumns {
     flex-wrap: wrap;
     -ms-flex-wrap: wrap; }
-    .splitColumns .column85, .splitColumns .column75, .splitColumns .column67, .splitColumns .column50, .splitColumns .column33, .splitColumns .column25, .splitColumns .column16 {
+    .splitColumns .column75, .splitColumns .column67, .splitColumns .column50,
+    .splitColumns .column33, .splitColumns .column25 {
       width: 100%; }
     .splitColumns.withMobileMargins .column85, .splitColumns.withMobileMargins .column75, .splitColumns.withMobileMargins .column67, .splitColumns.withMobileMargins .column50, .splitColumns.withMobileMargins .column33, .splitColumns.withMobileMargins .column25, .splitColumns.withMobileMargins .column16 {
       margin-bottom: 30px; } }
@@ -1728,7 +1729,32 @@ table.dataTable.no-footer,
   transition: opacity 0.15s linear;
 }
 
+/* Test Drive Button */
 
+/* Style buttons */
+
+.test-drive-btn {
+  background-color: #dbdfee;
+  border: solid 1pt #4254a7;
+  color: #344283;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 1.5em auto;
+  display: block;
+  border-radius: 0;
+}
+
+/* Darker background on mouse-over */
+.test-drive-btn:hover {
+  background-color: #4254a7;
+  color: #fcfcfc;
+  border: 1pt solid;
+}
+
+a.test-drive-link:hover {
+   text-decoration: none;
+}
 
 /*---- STICKY Sidebars for all w/ SMOOTH SCROLL-----*/
 
@@ -1842,7 +1868,7 @@ html {
 }
 
 .column25-left .section:nth-child(n+2) .sectionTitle,
-.column16-left .section:nth-child(n+2) .sectionTitle { /* Tutorial sidebar, all but 1st child */ 
+.column16-left .section:nth-child(n+2) .sectionTitle { /* Tutorial sidebar, all but 1st child */
   /*font-family: 'Lato', sans-serif; */ /* params */
  /* color: #1a162d99;
   transition: color 0.3s;
@@ -1851,7 +1877,7 @@ html {
 }
 
 .column25-left .section:nth-child(n+2) a.sectionTitle,
-.column16-left .section:nth-child(n+2) a.sectionTitle  { /* Tutorial sidebar, all but 1st child -- Words, not number prefix */ 
+.column16-left .section:nth-child(n+2) a.sectionTitle  { /* Tutorial sidebar, all but 1st child -- Words, not number prefix */
   font-weight: normal;
   font-size: 15px;
 }
@@ -1864,13 +1890,13 @@ html {
   font-weight: bold;
 }*/
 
-.column25-left .sectionTitle a:hover:not(.current)
+.column25-left .sectionTitle a:hover:not(.current),
 .column16-left .sectionTitle a:hover:not(.current){
   /*color: black; */
   text-decoration: none;
 }
 
-.column25-left .sectionTitle.current
+.column25-left .sectionTitle.current,
 .column16-left .sectionTitle.current{
   text-decoration: none;
 }
@@ -1883,7 +1909,7 @@ html {
   padding-left: 1.5em;
 }
 
-.column25-left,
+.column25-left, 
 .column16-left {
   padding-top: 20px;
   /*padding-right: 3em; */
@@ -2127,11 +2153,11 @@ a > svg.anchor-symbol:hover {
   .column25-left .section .section {
    margin-bottom: 25px;
   }
-
+  
   .column16-left .section .section {
    margin-bottom: 5px;
   }
-  
+
   .start {
 	flex-direction: column-reverse;
   }
