@@ -26,6 +26,14 @@ The tidyverse also includes many other packages with more specialised usage. The
 
 ## Related packages
 
+### HTML widgets
+
+(what do with our packages vs others?)
+
++ https://www.htmlwidgets.org/
+
+
+
 ### Workflow
 
 + here
@@ -35,6 +43,7 @@ The tidyverse also includes many other packages with more specialised usage. The
 + The goal of the [gt](https://gt.rstudio.com/) package is to make it easy to create data-based, customized tables using a *grammar of tables*. The grammar allows you to describe a set of underlying components that can be recombined in different ways to solve different problems.
 
 + The goal of the [DT](https://rstudio.github.io/DT/) package is to make it easy to create interactive data-based HTML tables with search, sort, and filtering.
+
 
 ### Style & theming
 
@@ -74,6 +83,8 @@ The tidyverse also includes many other packages with more specialised usage. The
 + [bookdownThemeEditor](https://github.com/hebrewseniorlife/bookdownThemeEditor)
 
 ### Extras
+
++ [reactable](https://glin.github.io/reactable/index.html)
 
 + [asciicast](https://github.com/r-lib/asciicast)
 

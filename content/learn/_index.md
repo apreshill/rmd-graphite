@@ -1,7 +1,7 @@
 ---
 title: Learn
-description: "Learn how to go farther with tidymodels in your modeling and machine learning projects."
-icon_attribution: "Icons made by [Becris](https://www.flaticon.com/authors/becris) from www.flaticon.com"
+description: "Learn how the R Markdown ecosystem can help you do better data science in less time."
+icon_attribution: "Art by [Desirée De Leon](https//desiree.rbind.io/)"
 ---
 
-After you know [what you need to get started](/start/) with tidymodels, you can learn more and go further. Find articles here to help you solve specific problems using the tidymodels framework. Articles are organized into these categories:
+Once you know [the basics](/start/) about using R Markdown, you can learn more and go further. Find articles here to help you learn new strategies to solve specific problems using the R Markdown ecosystem. Articles are organized into these categories:

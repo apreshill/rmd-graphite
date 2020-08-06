@@ -27,7 +27,7 @@
   <!-- range across pages WITHIN sections-->
   {{ range first 4 .Pages.ByWeight }}
   <div class="card">
-    {{ $thumb := (.Resources.ByType "image").GetMatch "*thumbnail*" }}
+    {{ $thumb := (.Resources.ByType "image").GetMatch "*tb*" }}
     {{ with $thumb }}
     <img src="{{ .RelPermalink }}" class="card-img-top" aria-hidden="true">
     {{ end }}

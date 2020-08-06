@@ -32,3 +32,23 @@ p a {
 	line-height: 2rem;
 	font-weight: 400;
 }
+
+.learn-list.itemDescription {
+  margin-top: 1rem;
+	margin-left: 0em; 
+}
+
+.image-cropper {
+	height: 200px;
+}
+
+/* spacing of 'get started' tutorial list */
+.column25-left .section:nth-child(n+2) .sectionTitle, 
+.column16-left .section:nth-child(n+2) .sectionTitle {
+	line-height: 1.1rem;
+}
+
+.column25-left .section:nth-child(n+2) a.sectionTitle, 
+.column16-left .section:nth-child(n+2) a.sectionTitle {
+	line-height: 1.1rem;
+}
