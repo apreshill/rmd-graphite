@@ -10,12 +10,14 @@
       <div class="column85">
         <div class="article-title">{{ .Title | title }}</div>
         <div>{{ .Params.description | markdownify }}</div>
+        
+        <div>{{ .Content | markdownify }}</div>
 
 <!-- range across sections-->
 {{ range $index, $element := .Sections }}
        
 <!--anchorizing all subsection links-->
-<h2 style="margin-top: .01em;" id="{{ anchorize (.Title) }}">{{ .Title | safeHTML }}
+<h2 style="margin-top: 0rem; padding-top: 5rem;" id="{{ anchorize (.Title) }}">{{ .Title | safeHTML }}
   <a href="#{{ anchorize (.Title) }}"></a>
 </h2>
 
