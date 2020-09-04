@@ -9,7 +9,8 @@ p a {
 
 .column25-left .section a,
 .column16-left .section a {
-	letter-spacing: .07em;
+	letter-spacing: .05em;
+	font-style: italic;
 }
 
 #homeContent .blurb .event {
@@ -76,6 +77,8 @@ img.focal {
 .column16 .sectionTitle, 
 .column16 .sectionTitle a {
 	font-weight: 500;
+	font-size: 1.0rem;
+	letter-spacing: .1em;
 }
 
 /* get started sidebar actions */
@@ -107,4 +110,11 @@ img.focal {
 #menu {
 	text-transform: none !important;
 	letter-spacing: 0.1rem;
+}
+
+div.tagline {
+	font-size: 1.2rem !important;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .2rem;
 }
