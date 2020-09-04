@@ -102,7 +102,7 @@ MathJaxVersion = "2.7.1"
 [capitalization]
 # Make particular headers "uppercase" or "lowercase"
 # set = false (no quotes) for normal text
-    text_transform = "uppercase"
+    text_transform = false
 
 [accent_color]
     # Used for headers, so should be accessibility-friendly
