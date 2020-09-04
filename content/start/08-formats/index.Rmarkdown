@@ -1,16 +1,13 @@
 ---
 title: "Output Formats"
-weight: 9
-tags: [recipes, parsnip, workflows, yardstick, broom]
-categories: [pre-processing]
+weight: 8
 description: | 
   Use parameters to re-render the same output with different versions of your data, or depending on different values present in your data.
 ---
 
 Set the `output_format` argument of `render` to render your .Rmd file into any of R Markdown's supported formats. For example, the code below renders 1-example.Rmd to a Microsoft Word document. You can try it out [here](https://rstudio.cloud/project/181952) on RStudio Cloud. 
 
-
-```r
+```{r eval = FALSE}
 library(rmarkdown)
 render("1-example.Rmd", output_format = "word_document")
 ```

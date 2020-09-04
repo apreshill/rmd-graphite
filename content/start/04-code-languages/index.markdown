@@ -1,8 +1,6 @@
 ---
 title: "Code languages"
-weight: 5
-tags: [recipes, parsnip, workflows, yardstick, broom]
-categories: [pre-processing]
+weight: 4
 description: | 
   Use inline code to inject code output seamlessly into your narrative text.
 ---
@@ -26,7 +24,8 @@ Notice how this .Rmd file executes code in bash and python. You can open the fil
 
 To process a code chunk using an alternate language engine, replace the `r` at the start of your chunk declaration with the name of the language:
 
-```{r eval = FALSE}
+
+```r
 ```{bash}
 ```
 ```

@@ -1,8 +1,6 @@
 ---
 title: "Inline code"
-weight: 4
-tags: [recipes, parsnip, workflows, yardstick, broom]
-categories: [pre-processing]
+weight: 3
 description: | 
   Use inline code to inject code output seamlessly into your narrative text.
 ---

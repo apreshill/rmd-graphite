@@ -1,8 +1,6 @@
 ---
 title: "Code chunks"
-weight: 3
-tags: [rsample, parsnip, tune, workflows, yardstick]
-categories: [resampling]
+weight: 2
 description: | 
   Measure model performance by generating different versions of the training data through resampling.
 ---
@@ -24,7 +22,7 @@ or by typing the chunk delimiters ` ```{r} ` and ` ``` `.
 
 When you render your .Rmd file, R Markdown will run each code chunk and embed the results beneath the code chunk in your final report.
 
-## Chunk Options
+## Chunk options
 
 Chunk output can be customized with [knitr options](http://yihui.name/knitr/options/), arguments set in the `{}` of a chunk header. Above, we use five arguments:
 
@@ -36,7 +34,7 @@ Chunk output can be customized with [knitr options](http://yihui.name/knitr/opti
 
 See the [R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) for a complete list of knitr chunk options.
 
-## Global Options
+## Global options
 
 To set global options that apply to every chunk in your file, call `knitr::opts_chunk$set` in a code chunk. Knitr will treat each option that you pass to `knitr::opts_chunk$set` as a global default that can be overwritten in individual chunk headers.
 

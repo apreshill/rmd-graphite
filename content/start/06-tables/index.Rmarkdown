@@ -1,8 +1,6 @@
 ---
 title: "Tables"
-weight: 7
-tags: [recipes, parsnip, workflows, yardstick, broom]
-categories: [pre-processing]
+weight: 6
 description: | 
   Use parameters to re-render the same output with different versions of your data, or depending on different values present in your data.
 ---

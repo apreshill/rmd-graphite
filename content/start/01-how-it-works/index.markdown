@@ -1,8 +1,6 @@
 ---
 title: "How it works"
-weight: 2
-tags: [parsnip, broom]
-categories: [model fitting]
+weight: 1
 description: | 
   Get started by learning how to specify and train a model using tidymodels.
 ---
@@ -20,7 +18,7 @@ Notice that the file contains three types of content:
 * R code chunks surrounded by <code>```</code>s
 * text mixed with simple text formatting
 
-## A Notebook Interface
+## A notebook interface
 
 When you open the file in the RStudio IDE, it becomes a [notebook interface for R](https://bookdown.org/yihui/rmarkdown/notebook.html). You can run each code chunk by clicking the ![](images/notebook-run-chunk.png) icon. RStudio executes the code and display the results inline with your file.
 
@@ -31,7 +29,8 @@ When you open the file in the RStudio IDE, it becomes a [notebook interface for 
 
 To generate a report from the file, run the `render` command:
 
-```{r eval = FALSE}
+
+```r
 library(rmarkdown)
 render("1-example.Rmd")
 ```

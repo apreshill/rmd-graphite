@@ -1,8 +1,6 @@
 ---
 title: "Parameters"
-weight: 6
-tags: [recipes, parsnip, workflows, yardstick, broom]
-categories: [pre-processing]
+weight: 5
 description: | 
   Use parameters to re-render the same output with different versions of your data, or depending on different values present in your data.
 ---
@@ -27,8 +25,7 @@ Parameters are made available within the knit environment as a read-only list na
 
 Add a `params` argument to `render` to create a report that uses a new set of parameter values. Here we modify our report to use the `aleutians` data set with 
 
-
-```r
+```{r eval = FALSE}
 render("5-parameters.Rmd", params = list(data = "aleutians"))
 ```
 
