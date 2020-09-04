@@ -12,6 +12,8 @@ Code results can be inserted directly into the text of a .Rmd file by enclosing 
 ![](inline-1-heat.png)
 </br>
 
+## Insert variables in text
+
 Using `` `r `  `` makes it easy to update the report to refer to another function. 
 
 ![](inline-2-terrain.png)
@@ -23,3 +25,7 @@ R Markdown will always
 * apply relevant text formatting to the results
 
 As a result, inline output is indistinguishable from the surrounding text. Inline expressions do not take knitr options.
+
+## Use functions in text
+
+## Format text as code
