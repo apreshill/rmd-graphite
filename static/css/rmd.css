@@ -117,3 +117,18 @@ div.tagline {
 	font-weight: bold;
 	letter-spacing: .2rem;
 }
+
+.tutorial nav#TableOfContents {
+  padding-top: 110px;
+  margin-top: -72px;
+}
+
+.tutorial nav#TableOfContents a {
+  font-style: italic;
+}
+
+.tutorial h1.learning-objective {
+  text-transform: none !important;
+  padding-top: 0em;
+  font-style: italic;
+}
