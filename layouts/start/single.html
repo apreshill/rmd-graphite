@@ -9,24 +9,16 @@
 
       {{ partial "start-sidebar.html" . }}
       
-      <div class="column60">
+      <div class="column85">
 
-      <h1 class="article-title">{{ .Weight }}&nbsp;&nbsp;&nbsp;{{ .Title | markdownify }}</h1>
-      
-      <div class="tags-list">
-      <i class="fas fa-box-open" style="color:#1a162dde;"></i>&nbsp;
-      <h1 class="learning-objective">Tidymodels packages: </h1>
-      {{ range $i, $tags := (.GetTerms "tags") }}
-        {{- if $i -}}, {{ end -}}
-        {{ with $tags }}
-        <a href="{{ .Permalink }}">{{- .LinkTitle -}}</a>
-        {{- end -}}
-      {{- end -}}
-      </div>
+      <h1 class="article-title">{{ .Title | markdownify | humanize }}</h1>
         
       <div class="section">
+        <h1 class="tutorial learning-objective">On this page</h1>
         <div class="listItem learn-top-nav">
-          <div class="tutorial">{{ .TableOfContents }}</div>
+          <div class="tutorial">
+            {{ .TableOfContents }}
+          </div>
         </div>
       </div>
       
@@ -59,15 +51,6 @@
      </div> 
       
 
-      </div>
-      
-      <div class="column16">
-        <div class="section hideOnMobile">
-          {{ if ge (len .TableOfContents) 40 }}
-          <div class="sectionTitle">Contents</div>
-            {{ .TableOfContents }}
-          {{ end }}
-        </div>
       </div>
 
     </div>

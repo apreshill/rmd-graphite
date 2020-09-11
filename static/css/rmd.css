@@ -2,9 +2,14 @@ p a {
   text-decoration: underline #094a44 dotted;
 }
 
-.column25-left .section {
+.column25-left .section,
+.column16-left .section {
 	margin-bottom: 10px;
-	letter-spacing: 1pt;
+}
+
+.column25-left .section a,
+.column16-left .section a {
+	letter-spacing: .05em;
 }
 
 #homeContent .blurb .event {
@@ -38,16 +43,20 @@ p a {
 	margin-left: 0em; 
 }
 
+.listItem.learn-top-nav {
+  background-color: #e6f3fb52;
+  padding: 1.2em 0.7em 0.5em 0.7em;
+  border-top: 1pt solid #bddff4b5;
+  border-bottom: 1pt solid #bddff4b5;
+}
+
 .image-cropper {
 	height: 200px;
 }
 
 /* spacing of 'get started' tutorial list */
 .column25-left .section:nth-child(n+2) .sectionTitle, 
-.column16-left .section:nth-child(n+2) .sectionTitle {
-	line-height: 1.1rem;
-}
-
+.column16-left .section:nth-child(n+2) .sectionTitle,
 .column25-left .section:nth-child(n+2) a.sectionTitle, 
 .column16-left .section:nth-child(n+2) a.sectionTitle {
 	line-height: 1.1rem;
@@ -58,4 +67,58 @@ img.focal {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.column25-left .sectionTitle.start:first-of-type a, 
+.column16-left .sectionTitle.start:first-of-type a,
+.column25 .sectionTitle, 
+.column25 .sectionTitle a, 
+.column16 .sectionTitle, 
+.column16 .sectionTitle a {
+	font-weight: 500;
+	font-size: .9rem;
+	letter-spacing: .1em;
+}
+
+/* get started sidebar actions */
+
+.articleCategory a:hover, 
+.column25-left .section:nth-child(n+2) a.sectionTitle:hover, 
+.column16-left .section:nth-child(n+2) a.sectionTitle:hover {
+  border-left: 3px solid #79beee;
+  padding-left: 10px;
+  text-indent: -2px;
+}
+
+.column25-left .section a.sectionTitle, 
+.column16-left .section a.sectionTitle {
+    padding: 4px 20px 4px 10px; /* Left-padding changed from 6px to 5px, so shift left does not happen on hover */
+}
+
+.column25-left .section:nth-child(n+2) a.sectionTitle.current, 
+.column16-left .section:nth-child(n+2) a.sectionTitle.current {
+  border-left: 3px solid #79beee;
+  padding-left: 10px;
+  text-indent: -2px;
+}
+
+.splitColumns .column85 {
+    padding-left: 1.5em; 
+}
+
+#menu {
+	text-transform: none !important;
+	letter-spacing: 0.1rem;
+}
+
+div.tagline {
+	font-size: 1.2rem !important;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .2rem;
+}
+
+h1.tutorial.learning-objective {
+  text-transform: none !important;
+  font-style: italic !important;
 }

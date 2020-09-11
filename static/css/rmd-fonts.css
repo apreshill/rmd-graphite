@@ -3,7 +3,7 @@
 }
 
 body, button, input, textarea {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /*
@@ -40,101 +40,166 @@ a.learn-top-nav-item,
 }
 */
 
-/* nunito-sans-regular - latin */
+/* vietnamese */
 @font-face {
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/nunito-sans-v5-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'),
-       url('../fonts/nunito-sans-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/nunito-sans-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/nunito-sans-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/nunito-sans-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/nunito-sans-v5-latin-regular.svg#NunitoSans') format('svg'); /* Legacy iOS */
-}
-
-/* nunito-sans-italic - latin */
-@font-face {
-  font-family: 'Nunito Sans';
+  font-family: 'Work Sans';
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/nunito-sans-v5-latin-italic.eot'); /* IE9 Compat Modes */
-  src: local('Nunito Sans Italic'), local('NunitoSans-Italic'),
-       url('../fonts/nunito-sans-v5-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/nunito-sans-v5-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/nunito-sans-v5-latin-italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/nunito-sans-v5-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/nunito-sans-v5-latin-italic.svg#NunitoSans') format('svg'); /* Legacy iOS */
+  font-display: swap;
+  src: url('../fonts/work_sans-400-vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
-
-/* nunito-sans-600 - latin */
+/* latin-ext */
 @font-face {
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/nunito-sans-v5-latin-600.eot'); /* IE9 Compat Modes */
-  src: local('Nunito Sans SemiBold'), local('NunitoSans-SemiBold'),
-       url('../fonts/nunito-sans-v5-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/nunito-sans-v5-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/nunito-sans-v5-latin-600.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/nunito-sans-v5-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/nunito-sans-v5-latin-600.svg#NunitoSans') format('svg'); /* Legacy iOS */
-}
-
-/* nunito-sans-600italic - latin */
-@font-face {
-  font-family: 'Nunito Sans';
+  font-family: 'Work Sans';
   font-style: italic;
-  font-weight: 600;
-  src: url('../fonts/nunito-sans-v5-latin-600italic.eot'); /* IE9 Compat Modes */
-  src: local('Nunito Sans SemiBold Italic'), local('NunitoSans-SemiBoldItalic'),
-       url('../fonts/nunito-sans-v5-latin-600italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/nunito-sans-v5-latin-600italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/nunito-sans-v5-latin-600italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/nunito-sans-v5-latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/nunito-sans-v5-latin-600italic.svg#NunitoSans') format('svg'); /* Legacy iOS */
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/work_sans-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/work_sans-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/work_sans-400-vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/work_sans-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/work_sans-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/work_sans-400-vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/work_sans-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/work_sans-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/work_sans-400-vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/work_sans-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/work_sans-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-
-/* libre-baskerville-regular - latin */
+/* latin-ext */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'), url('../fonts/libre_baskerville-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'), url('../fonts/libre_baskerville-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
 @font-face {
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/libre-baskerville-v7-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'),
-       url('../fonts/libre-baskerville-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/libre-baskerville-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/libre-baskerville-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/libre-baskerville-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/libre-baskerville-v7-latin-regular.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
+  font-display: swap;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url('../fonts/libre_baskerville-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
-/* libre-baskerville-italic - latin */
+/* latin */
 @font-face {
   font-family: 'Libre Baskerville';
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
-  src: url('../fonts/libre-baskerville-v7-latin-italic.eot'); /* IE9 Compat Modes */
-  src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'),
-       url('../fonts/libre-baskerville-v7-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/libre-baskerville-v7-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/libre-baskerville-v7-latin-italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/libre-baskerville-v7-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/libre-baskerville-v7-latin-italic.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
+  font-display: swap;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url('../fonts/libre_baskerville-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-/* libre-baskerville-700 - latin */
+/* latin-ext */
 @font-face {
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/libre-baskerville-v7-latin-700.eot'); /* IE9 Compat Modes */
-  src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'),
-       url('../fonts/libre-baskerville-v7-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/libre-baskerville-v7-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/libre-baskerville-v7-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/libre-baskerville-v7-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/libre-baskerville-v7-latin-700.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
+  font-display: swap;
+  src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url('../fonts/libre_baskerville-700-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url('../fonts/libre_baskerville-700-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }

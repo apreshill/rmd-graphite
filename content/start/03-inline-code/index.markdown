@@ -1,0 +1,31 @@
+---
+title: "Inline code"
+weight: 3
+description: | 
+  Use inline code to inject code output seamlessly into your narrative text.
+---
+
+Code results can be inserted directly into the text of a .Rmd file by enclosing the code with `` `r `  ``. The file below uses `` `r `  `` twice to call `colorFunc`, which returns "heat.colors." You can open the file [here](https://rstudio.cloud/project/181921) in RStudio Cloud.
+
+{{< test-drive url="https://rstudio.cloud/project/181921" >}}
+
+![](inline-1-heat.png)
+</br>
+
+## Insert variables in text
+
+Using `` `r `  `` makes it easy to update the report to refer to another function. 
+
+![](inline-2-terrain.png)
+</br>
+
+R Markdown will always 
+
+* display the results of inline code, but not the code
+* apply relevant text formatting to the results
+
+As a result, inline output is indistinguishable from the surrounding text. Inline expressions do not take knitr options.
+
+## Use functions in text
+
+## Format text as code

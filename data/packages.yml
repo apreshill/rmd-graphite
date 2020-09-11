@@ -4,7 +4,7 @@ rmarkdown:
   url_git: https://github.com/rstudio/rmarkdown
   url_docs: 'https://rmarkdown.rstudio.com/docs/'
   url_cran: https://cloud.r-project.org/web/packages/rmarkdown/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/rmarkdown.png
+  url_hex: ../images/hex/rmarkdown.png
   name: rmarkdown
   extend: false
 flexdashboard:
