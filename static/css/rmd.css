@@ -76,7 +76,7 @@ img.focal {
 .column16 .sectionTitle, 
 .column16 .sectionTitle a {
 	font-weight: 500;
-	font-size: 1.0rem;
+	font-size: .9rem;
 	letter-spacing: .1em;
 }
 
@@ -118,17 +118,7 @@ div.tagline {
 	letter-spacing: .2rem;
 }
 
-.tutorial nav#TableOfContents {
-  padding-top: 110px;
-  margin-top: -72px;
-}
-
-.tutorial nav#TableOfContents a {
-  font-style: italic;
-}
-
-.tutorial h1.learning-objective {
+h1.tutorial.learning-objective {
   text-transform: none !important;
-  padding-top: 0em;
-  font-style: italic;
+  font-style: italic !important;
 }
