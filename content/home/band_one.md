@@ -1,5 +1,5 @@
 ---
-title: "Prose, code, and results, together."
+title: "Write. Code. Share. Repeat."
 col0:
   row1: "rmarkdown"
   row2: "flexdashboard"
@@ -13,4 +13,4 @@ col2:
   row4: "pagedown"
 ---
 
-Use R Markdown to develop your code and ideas in one reproducible document. Knit to produce results and create analyses ready to be shared.
+Use R Markdown to develop your code and ideas in one reproducible document. Knit plots, tables, and results together with narrative text, and create analyses ready to be shared.
