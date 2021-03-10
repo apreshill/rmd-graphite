@@ -1,5 +1,5 @@
 ---
-title: "Analyze. Share. Reproduce."
+title: "Prose, code, and results, together."
 col0:
   row1: "rmarkdown"
   row2: "flexdashboard"
@@ -13,5 +13,4 @@ col2:
   row4: "pagedown"
 ---
 
-Your data tells a story. Tell it with R Markdown. Turn your analyses into high quality documents, reports, presentations and dashboards.
-
+Use R Markdown to develop your code and ideas in one reproducible document. Knit to produce results and create analyses ready to be shared.
