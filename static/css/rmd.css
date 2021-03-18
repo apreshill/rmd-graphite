@@ -122,3 +122,40 @@ h1.tutorial.learning-objective {
   text-transform: none !important;
   font-style: italic !important;
 }
+
+/* --------------Two columns--------------- */
+
+.col2 {
+  columns: 2 200px;         /* number of columns and width in pixels*/
+  -webkit-columns: 2 200px; /* chrome, safari */
+  -moz-columns: 2 200px;    /* firefox */
+}
+
+
+.side-by-side {
+  display: flex;
+}
+
+.side1 {
+  width: 30%;
+}
+
+.side2 {
+  width: 68%;
+  margin-left: 1rem;
+}
+
+/* --------------Even split- two columns--------------- */
+
+.split {
+  display: flex;
+}
+
+.split1 {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.split2 {
+  width: 50%;
+}
