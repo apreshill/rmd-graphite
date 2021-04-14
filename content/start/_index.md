@@ -4,25 +4,19 @@ subtitle: Introduction
 description: "What do you need to know to start using R Markdown? Learn what you need in this quick tour."
 ---
 
-## Overview
+## What is R Markdown?
 
-R Markdown provides an authoring framework for data science. You can use a single R Markdown file to both 
+R Markdown is a tool designed for anyone who uses code to work with data. You can use R Markdown at any stage of an analysis project, any time you want to develop code and ideas alongside each other. 
 
-* save and execute code
+Start an R Markdown project if you want to:
 
-* generate high quality reports that can be shared with an audience 
+* Save, execute, and explain your code, all in the same place. 
 
-R Markdown documents are fully reproducible and support dozens of static and dynamic output formats. This 1-minute video provides a quick tour of what's possible with R Markdown:
+* Transform your code into polished and professional data products&mdash;reports, dashboards, websites, slides, even books&mdash;that are ready to be shared.
+
+Watch this 1-minute video to see what is possible with R Markdown:
 
 <iframe src="https://player.vimeo.com/video/178485416" width="700" height="394" frameborder="0" style="margin-bottom: 2em;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-## Installation
-
-Like the rest of R, R Markdown is free and open source. You can install the R Markdown package from CRAN with:
-
-```r
-install.packages("rmarkdown")
-```
 
 ## Get started
 
@@ -30,7 +24,19 @@ Learn the basics with this quick tour of R Markdown by following the links on th
 
 ## Resources
 
-You may also find the following resources helpful:
+As you learn and use R Markdown, the following resources are helpful to keep handy:
 
 * [The R Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
 * [The R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+
+---
+
+not in there right now:
+
++ YAML metadata (like title, author, etc)
++ render from command line
++ parameters
++ inline code
++ languages
++ projects! + file paths
++ purl + spin
