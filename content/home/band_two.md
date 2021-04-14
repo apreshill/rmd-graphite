@@ -1,7 +1,7 @@
 ---
 title: "Not just for R code."
-image: 
-alt_text: "placeholder"
+image: langs.png
+alt_text: "Python, R, and SQL all together"
 url_image: 
 ---
 
