@@ -89,4 +89,7 @@ Output formats are one of the most versatile features of R Markdown&mdash;you ca
 </div>
 </div>
 
-While this is a polished and shareable document as is, it is not likely that your work stops there---but it is a great place to start. Next, we'll show how to use R Markdown to develop your code and ideas alongside each other.
+
+## What's next?
+
+While this is a polished and shareable document as is, it is not likely that your work stops there---but it is a great place to start. Next, we'll show how to use R Markdown to develop your ideas alongside your code using narrative text.
