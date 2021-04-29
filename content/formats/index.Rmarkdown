@@ -1,0 +1,216 @@
+---
+title: "Formats"
+layout: standard
+---
+  
+yes hello
+```{r}
+library(gt)
+
+# function to style the tables for display
+# used alongside CSS
+style_table <- function(data, table_title) {
+  data %>% 
+  gt() %>% 
+  tab_header(
+    title = table_title
+  ) %>% 
+  tab_options(
+    table.align = "left",
+    table.font.size = pct(80),
+    heading.title.font.size = pct(90),
+    column_labels.font.size = pct(90),
+    table.width = "100%",
+    row.striping.include_table_body = TRUE
+  )
+}
+
+make_two_gt <- function(gt_left, gt_right, ...) {
+  htmltools::withTags(
+  table(style = "width: 100%; border: 0px;",
+    tr(
+      td(style = glue::glue("width: 50%; vertical-align: top;"),
+        gt:::as.tags.gt_tbl(gt_left)
+      ),
+      td(style = glue::glue("width: 50%; vertical-align: top;"),
+        gt:::as.tags.gt_tbl(gt_right)
+      )
+    )
+  )
+)
+}
+```
+
+```{r}
+library(tidyverse) ## dplyr provides the join functions
+superheroes <- tibble::tribble(
+       ~name, ~alignment,  ~gender,          ~publisher,
+   "Magneto",      "bad",   "male",            "Marvel",
+     "Storm",     "good", "female",            "Marvel",
+  "Mystique",      "bad", "female",            "Marvel",
+    "Batman",     "good",   "male",                "DC",
+     "Joker",      "bad",   "male",                "DC",
+  "Catwoman",      "bad", "female",                "DC",
+   "Hellboy",     "good",   "male", "Dark Horse Comics"
+  )
+publishers <- tibble::tribble(
+  ~publisher, ~yr_founded,
+        "DC",       1934L,
+    "Marvel",       1939L,
+     "Image",       1992L
+  )
+
+# superheroes will always be lilac
+super_gt <- style_table(superheroes, "superheroes") %>% 
+  tab_options(
+    table.background.color = "#edc7fc" # lilac
+  )
+# publishers will always be light blue
+pub_gt <- style_table(publishers, "publishers") %>% 
+  tab_options(
+    table.background.color = "#cce6f6" # light blue
+  )
+```
+
+```{r}
+make_two_gt(super_gt, pub_gt)
+```
+
+  
+  <div class="columns">
+    <div class="column2">
+
+    <div class="formatSection">
+      <div class="formatSectionTitle">Documents</div>
+      <div class="formatTable">
+        <a href="https://bookdown.org/yihui/rmarkdown/notebook.html" class="formatTableRow">
+          <div class="formatName">Notebook</div>
+          <div class="formatDescription">Interactive R Notebooks</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/html-document.html" class="formatTableRow">
+          <div class="formatName">HTML</div>
+          <div class="formatDescription">HTML document w/ Bootstrap CSS</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/pdf-document.html" class="formatTableRow">
+          <div class="formatName">PDF</div>
+          <div class="formatDescription">PDF document (via LaTeX template)</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/word-document.html" class="formatTableRow">
+          <div class="formatName">Word</div>
+          <div class="formatDescription">Microsoft Word document (docx)</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/opendocument-text-document.html" class="formatTableRow">
+          <div class="formatName">ODT</div>
+          <div class="formatDescription">OpenDocument Text document</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/rich-text-format-document.html" class="formatTableRow">
+          <div class="formatName">RTF</div>
+          <div class="formatDescription">Rich Text Format document</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/markdown-document.html" class="formatTableRow">
+          <div class="formatName">Markdown</div>
+          <div class="formatDescription">Markdown document (various flavors)</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="formatSection">
+      <div class="formatSectionTitle">Presentations</div>
+      <div class="formatTable">
+        <a href="https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html" class="formatTableRow">
+          <div class="formatName">ioslides</div>
+          <div class="formatDescription">HTML presentation with ioslides</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/revealjs.html" class="formatTableRow">
+          <div class="formatName">reveal.js</div>
+          <div class="formatDescription">HTML presentation with reveal.js</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/slidy-presentation.html" class="formatTableRow">
+          <div class="formatName">Slidy</div>
+          <div class="formatDescription">HTML presentation with W3C Slidy</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/beamer-presentation.html" class="formatTableRow">
+          <div class="formatName">Beamer</div>
+          <div class="formatDescription">PDF presentation with LaTeX Beamer</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/powerpoint-presentation.html" class="formatTableRow">
+          <div class="formatName">PowerPoint</div>
+          <div class="formatDescription">PowerPoint presentation</div>
+        </a>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="column2">
+    
+    <div class="formatSection">
+      <div class="formatSectionTitle">Journals</div>
+      <div class="formatTable">
+        <a href="https://rstudio.github.io/distill/" class="formatTableRow">
+          <div class="formatName">distill</div>
+          <div class="formatDescription">Scientific and technical writing for the web</div>
+        </a>
+        <a href="https://github.com/rstudio/rticles" class="formatTableRow">
+          <div class="formatName">jss_article</div>
+          <div class="formatDescription">Journal of Statistical Software (JSS)</div>
+        </a>
+        <a href="https://github.com/rstudio/rticles" class="formatTableRow">
+          <div class="formatName">acm_article</div>
+          <div class="formatDescription">Association for Computing Machinery (ACM)</div>
+        </a>
+        <a href="https://github.com/rstudio/rticles" class="formatTableRow">
+          <div class="formatName">acs_article</div>
+          <div class="formatDescription">American Chemical Society (ACS) Journal</div>
+        </a>
+        <a href="https://github.com/rstudio/rticles" class="formatTableRow">
+          <div class="formatName">ctex</div>
+          <div class="formatDescription">Documents based on the LaTeX package ctex</div>
+        </a>
+        <a href="https://github.com/rstudio/rticles" class="formatTableRow">
+          <div class="formatName">elsevier_article</div>
+          <div class="formatDescription">Submissions to Elsevier journals</div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="formatSection">
+      <div class="formatSectionTitle">More</div>
+      <div class="formatTable">
+        <a href="flexdashboard/index.html" class="formatTableRow">
+          <div class="formatName">flexdashboard</div>
+          <div class="formatDescription">Interactive dashboards</div>
+        </a>
+        <a href="https://bookdown.org" class="formatTableRow">
+          <div class="formatName">bookdown</div>
+          <div class="formatDescription">HTML, PDF, ePub, and Kindle books</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html" class="formatTableRow">
+          <div class="formatName">Websites</div>
+          <div class="formatDescription">Multi-page websites</div>
+        </a>
+        <a href="https://bookdown.org/yihui/blogdown/" class="formatTableRow">
+          <div class="formatName">blogdown</div>
+          <div class="formatDescription">Customizable websites and blogs</div>
+        </a>
+        <a href="https://pkgdown.r-lib.org/" class="formatTableRow">
+          <div class="formatName">pkgdown</div>
+          <div class="formatDescription">Package documentation websites</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/tufte-handouts.html" class="formatTableRow">
+          <div class="formatName">Tufte Handout</div>
+          <div class="formatDescription">Handouts in the style of Edward Tufte</div>
+        </a>
+        <a href="https://bookdown.org/yihui/rmarkdown/r-package-vignette.html" class="formatTableRow">
+          <div class="formatName">Package Vignette</div>
+          <div class="formatDescription">R package vignette (HTML)</div>
+        </a>
+        <a href="github_document_format.html" class="formatTableRow">
+          <div class="formatName">Github Document</div>
+          <div class="formatDescription">GitHub Flavored Markdown document.</div>
+        </a>
+      </div>
+    </div>
+    
+    </div>
+    
