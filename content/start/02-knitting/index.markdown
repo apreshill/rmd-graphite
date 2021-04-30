@@ -11,15 +11,11 @@ R Markdown is designed to keep your source code separate from your output. Why? 
 
 ## Knitting the source file
 
-<div class = "side-by-side">
-<div class = "side1">
-
+{{< columns class="side-by-side" >}}
+{{< column name="side1" >}}
 ![](rmarkdown_hedgehog.png)
-
-
-</div>
-<div class = "side2">
-
+{{< /column >}}
+{{< column name="side2" >}}
 The file extension `.Rmd` makes your file **executable**, which means that this file can be used to both save *and* execute code. Here is a code chunk:
 
 ````
@@ -29,9 +25,8 @@ The file extension `.Rmd` makes your file **executable**, which means that this 
 ````
 
 Any output your code produces like tables, plots, or other results can be included when you render your document. This process is called **knitting**, because you are executing code and knitting the output back into the document. There is a special button for it in RStudio that looks like this: ![](knit-button.png)
-
-</div>
-</div>
+{{< /column >}}
+{{< /columns  >}}
 
 <iframe src="https://drive.google.com/file/d/1YV-YZU9IBLNL0jtgXMIK9JbHFVhaVtwl/preview" width="640" height="480">
 
@@ -44,32 +39,25 @@ NOTE: You may also use keyboard shortcuts to knit:
 
 ## The output file
 
-<div class = "split">
-<div class = "split1">
-
+{{< columns class="split" >}}
+{{< column name="split1" >}}
 When we knit, R Markdown generates a new file that now contains four elements: 
 
 -   Metadata at the top (we see the title)
 -   Narrative text
 -   A code chunk (but we only see one...)
 -   Results (a plot!) 
-
-
-
-</div>
-<div class = "split2">
-
+{{< /column >}}
+{{< column name="split2" >}}
 ![](01-output.png)
-
-</div>
-</div>
+{{< /column >}}
+{{< /columns  >}}
 
 
 ## The output format
 
-<div class = "split">
-<div class = "split1">
-
+{{< columns class="split" >}}
+{{< column name="split1" >}}
 This output file is an HTML document. This is a type of output, which was stored in the document's metadata block:
 
 ```yaml
@@ -80,14 +68,11 @@ output: html_document
 ```
 
 Output formats are one of the most versatile features of R Markdown&mdash;you can use them to build web pages like this one, Word documents, PDFs, multi-page websites, slides, and even write books.
-
-</div>
-<div class = "split2">
-
+{{< /column >}}
+{{< column name="split2" >}}
 ![](hedgehog-projects.jpg)
-
-</div>
-</div>
+{{< /column >}}
+{{< /columns  >}}
 
 
 ## What's next?

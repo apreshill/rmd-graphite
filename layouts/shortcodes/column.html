@@ -1,0 +1,4 @@
+<div class = "{{ .Get "name" | markdownify | emojify }}">
+  <!-- column content -->
+  {{ with .Inner }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+</div>
