@@ -94,12 +94,11 @@ make_two_gt(super_gt, pub_gt)
 <table style="width: 100%; border: 0px;">
 <tr>
 <td style="width: 50%; vertical-align: top;">
-<div id="bntgujeqfx" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#bntgujeqfx .gt_table {
+#ldeenunxgt .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: 0;
@@ -124,7 +123,7 @@ make_two_gt(super_gt, pub_gt)
   border-left-color: #D3D3D3;
 }
 
-#bntgujeqfx .gt_heading {
+#ldeenunxgt .gt_heading {
   background-color: #edc7fc;
   text-align: center;
   border-bottom-color: #edc7fc;
@@ -136,7 +135,7 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#bntgujeqfx .gt_title {
+#ldeenunxgt .gt_title {
   color: #333333;
   font-size: 90%;
   font-weight: initial;
@@ -146,7 +145,7 @@ make_two_gt(super_gt, pub_gt)
   border-bottom-width: 0;
 }
 
-#bntgujeqfx .gt_subtitle {
+#ldeenunxgt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -156,13 +155,13 @@ make_two_gt(super_gt, pub_gt)
   border-top-width: 0;
 }
 
-#bntgujeqfx .gt_bottom_border {
+#ldeenunxgt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#bntgujeqfx .gt_col_headings {
+#ldeenunxgt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -177,7 +176,7 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#bntgujeqfx .gt_col_heading {
+#ldeenunxgt .gt_col_heading {
   color: #333333;
   background-color: #edc7fc;
   font-size: 90%;
@@ -197,7 +196,7 @@ make_two_gt(super_gt, pub_gt)
   overflow-x: hidden;
 }
 
-#bntgujeqfx .gt_column_spanner_outer {
+#ldeenunxgt .gt_column_spanner_outer {
   color: #333333;
   background-color: #edc7fc;
   font-size: 90%;
@@ -209,15 +208,15 @@ make_two_gt(super_gt, pub_gt)
   padding-right: 4px;
 }
 
-#bntgujeqfx .gt_column_spanner_outer:first-child {
+#ldeenunxgt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bntgujeqfx .gt_column_spanner_outer:last-child {
+#ldeenunxgt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bntgujeqfx .gt_column_spanner {
+#ldeenunxgt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -229,7 +228,7 @@ make_two_gt(super_gt, pub_gt)
   width: 100%;
 }
 
-#bntgujeqfx .gt_group_heading {
+#ldeenunxgt .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #edc7fc;
@@ -251,7 +250,7 @@ make_two_gt(super_gt, pub_gt)
   vertical-align: middle;
 }
 
-#bntgujeqfx .gt_empty_group_heading {
+#ldeenunxgt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #edc7fc;
@@ -266,15 +265,15 @@ make_two_gt(super_gt, pub_gt)
   vertical-align: middle;
 }
 
-#bntgujeqfx .gt_from_md > :first-child {
+#ldeenunxgt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#bntgujeqfx .gt_from_md > :last-child {
+#ldeenunxgt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#bntgujeqfx .gt_row {
+#ldeenunxgt .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -293,7 +292,7 @@ make_two_gt(super_gt, pub_gt)
   overflow-x: hidden;
 }
 
-#bntgujeqfx .gt_stub {
+#ldeenunxgt .gt_stub {
   color: #333333;
   background-color: #edc7fc;
   font-size: 100%;
@@ -305,7 +304,7 @@ make_two_gt(super_gt, pub_gt)
   padding-left: 12px;
 }
 
-#bntgujeqfx .gt_summary_row {
+#ldeenunxgt .gt_summary_row {
   color: #333333;
   background-color: #edc7fc;
   text-transform: inherit;
@@ -315,7 +314,7 @@ make_two_gt(super_gt, pub_gt)
   padding-right: 5px;
 }
 
-#bntgujeqfx .gt_first_summary_row {
+#ldeenunxgt .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -325,7 +324,7 @@ make_two_gt(super_gt, pub_gt)
   border-top-color: #D3D3D3;
 }
 
-#bntgujeqfx .gt_grand_summary_row {
+#ldeenunxgt .gt_grand_summary_row {
   color: #333333;
   background-color: #edc7fc;
   text-transform: inherit;
@@ -335,7 +334,7 @@ make_two_gt(super_gt, pub_gt)
   padding-right: 5px;
 }
 
-#bntgujeqfx .gt_first_grand_summary_row {
+#ldeenunxgt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -345,11 +344,11 @@ make_two_gt(super_gt, pub_gt)
   border-top-color: #D3D3D3;
 }
 
-#bntgujeqfx .gt_striped {
+#ldeenunxgt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#bntgujeqfx .gt_table_body {
+#ldeenunxgt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -358,7 +357,7 @@ make_two_gt(super_gt, pub_gt)
   border-bottom-color: #D3D3D3;
 }
 
-#bntgujeqfx .gt_footnotes {
+#ldeenunxgt .gt_footnotes {
   color: #333333;
   background-color: #edc7fc;
   border-bottom-style: none;
@@ -372,13 +371,13 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#bntgujeqfx .gt_footnote {
+#ldeenunxgt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#bntgujeqfx .gt_sourcenotes {
+#ldeenunxgt .gt_sourcenotes {
   color: #333333;
   background-color: #edc7fc;
   border-bottom-style: none;
@@ -392,52 +391,53 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#bntgujeqfx .gt_sourcenote {
+#ldeenunxgt .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#bntgujeqfx .gt_left {
+#ldeenunxgt .gt_left {
   text-align: left;
 }
 
-#bntgujeqfx .gt_center {
+#ldeenunxgt .gt_center {
   text-align: center;
 }
 
-#bntgujeqfx .gt_right {
+#ldeenunxgt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bntgujeqfx .gt_font_normal {
+#ldeenunxgt .gt_font_normal {
   font-weight: normal;
 }
 
-#bntgujeqfx .gt_font_bold {
+#ldeenunxgt .gt_font_bold {
   font-weight: bold;
 }
 
-#bntgujeqfx .gt_font_italic {
+#ldeenunxgt .gt_font_italic {
   font-style: italic;
 }
 
-#bntgujeqfx .gt_super {
+#ldeenunxgt .gt_super {
   font-size: 65%;
 }
 
-#bntgujeqfx .gt_footnote_marks {
+#ldeenunxgt .gt_footnote_marks {
   font-style: italic;
-  font-weight: normal;
   font-size: 65%;
 }
 </style>
-<table class="gt_table">
+<div id="ldeenunxgt" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
-      <th colspan="4" class="gt_heading gt_title gt_font_normal gt_bottom_border" style>superheroes</th>
+      <th colspan="4" class="gt_heading gt_title gt_font_normal" style>superheroes</th>
     </tr>
-    
+    <tr>
+      <th colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style></th>
+    </tr>
   </thead>
   <thead class="gt_col_headings">
     <tr>
@@ -448,47 +448,59 @@ make_two_gt(super_gt, pub_gt)
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td class="gt_row gt_left">Magneto</td>
-<td class="gt_row gt_left">bad</td>
-<td class="gt_row gt_left">male</td>
-<td class="gt_row gt_left">Marvel</td></tr>
-    <tr><td class="gt_row gt_left gt_striped">Storm</td>
-<td class="gt_row gt_left gt_striped">good</td>
-<td class="gt_row gt_left gt_striped">female</td>
-<td class="gt_row gt_left gt_striped">Marvel</td></tr>
-    <tr><td class="gt_row gt_left">Mystique</td>
-<td class="gt_row gt_left">bad</td>
-<td class="gt_row gt_left">female</td>
-<td class="gt_row gt_left">Marvel</td></tr>
-    <tr><td class="gt_row gt_left gt_striped">Batman</td>
-<td class="gt_row gt_left gt_striped">good</td>
-<td class="gt_row gt_left gt_striped">male</td>
-<td class="gt_row gt_left gt_striped">DC</td></tr>
-    <tr><td class="gt_row gt_left">Joker</td>
-<td class="gt_row gt_left">bad</td>
-<td class="gt_row gt_left">male</td>
-<td class="gt_row gt_left">DC</td></tr>
-    <tr><td class="gt_row gt_left gt_striped">Catwoman</td>
-<td class="gt_row gt_left gt_striped">bad</td>
-<td class="gt_row gt_left gt_striped">female</td>
-<td class="gt_row gt_left gt_striped">DC</td></tr>
-    <tr><td class="gt_row gt_left">Hellboy</td>
-<td class="gt_row gt_left">good</td>
-<td class="gt_row gt_left">male</td>
-<td class="gt_row gt_left">Dark Horse Comics</td></tr>
+    <tr>
+      <td class="gt_row gt_left">Magneto</td>
+      <td class="gt_row gt_left">bad</td>
+      <td class="gt_row gt_left">male</td>
+      <td class="gt_row gt_left">Marvel</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">Storm</td>
+      <td class="gt_row gt_left gt_striped">good</td>
+      <td class="gt_row gt_left gt_striped">female</td>
+      <td class="gt_row gt_left gt_striped">Marvel</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Mystique</td>
+      <td class="gt_row gt_left">bad</td>
+      <td class="gt_row gt_left">female</td>
+      <td class="gt_row gt_left">Marvel</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">Batman</td>
+      <td class="gt_row gt_left gt_striped">good</td>
+      <td class="gt_row gt_left gt_striped">male</td>
+      <td class="gt_row gt_left gt_striped">DC</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Joker</td>
+      <td class="gt_row gt_left">bad</td>
+      <td class="gt_row gt_left">male</td>
+      <td class="gt_row gt_left">DC</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">Catwoman</td>
+      <td class="gt_row gt_left gt_striped">bad</td>
+      <td class="gt_row gt_left gt_striped">female</td>
+      <td class="gt_row gt_left gt_striped">DC</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Hellboy</td>
+      <td class="gt_row gt_left">good</td>
+      <td class="gt_row gt_left">male</td>
+      <td class="gt_row gt_left">Dark Horse Comics</td>
+    </tr>
   </tbody>
   
   
-</table>
-</div>
+</table></div>
 </td>
 <td style="width: 50%; vertical-align: top;">
-<div id="zpwuopvtaz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#zpwuopvtaz .gt_table {
+#alpzoubrpx .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: 0;
@@ -513,7 +525,7 @@ make_two_gt(super_gt, pub_gt)
   border-left-color: #D3D3D3;
 }
 
-#zpwuopvtaz .gt_heading {
+#alpzoubrpx .gt_heading {
   background-color: #cce6f6;
   text-align: center;
   border-bottom-color: #cce6f6;
@@ -525,7 +537,7 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#zpwuopvtaz .gt_title {
+#alpzoubrpx .gt_title {
   color: #333333;
   font-size: 90%;
   font-weight: initial;
@@ -535,7 +547,7 @@ make_two_gt(super_gt, pub_gt)
   border-bottom-width: 0;
 }
 
-#zpwuopvtaz .gt_subtitle {
+#alpzoubrpx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -545,13 +557,13 @@ make_two_gt(super_gt, pub_gt)
   border-top-width: 0;
 }
 
-#zpwuopvtaz .gt_bottom_border {
+#alpzoubrpx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zpwuopvtaz .gt_col_headings {
+#alpzoubrpx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -566,7 +578,7 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#zpwuopvtaz .gt_col_heading {
+#alpzoubrpx .gt_col_heading {
   color: #333333;
   background-color: #cce6f6;
   font-size: 90%;
@@ -586,7 +598,7 @@ make_two_gt(super_gt, pub_gt)
   overflow-x: hidden;
 }
 
-#zpwuopvtaz .gt_column_spanner_outer {
+#alpzoubrpx .gt_column_spanner_outer {
   color: #333333;
   background-color: #cce6f6;
   font-size: 90%;
@@ -598,15 +610,15 @@ make_two_gt(super_gt, pub_gt)
   padding-right: 4px;
 }
 
-#zpwuopvtaz .gt_column_spanner_outer:first-child {
+#alpzoubrpx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zpwuopvtaz .gt_column_spanner_outer:last-child {
+#alpzoubrpx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zpwuopvtaz .gt_column_spanner {
+#alpzoubrpx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -618,7 +630,7 @@ make_two_gt(super_gt, pub_gt)
   width: 100%;
 }
 
-#zpwuopvtaz .gt_group_heading {
+#alpzoubrpx .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #cce6f6;
@@ -640,7 +652,7 @@ make_two_gt(super_gt, pub_gt)
   vertical-align: middle;
 }
 
-#zpwuopvtaz .gt_empty_group_heading {
+#alpzoubrpx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #cce6f6;
@@ -655,15 +667,15 @@ make_two_gt(super_gt, pub_gt)
   vertical-align: middle;
 }
 
-#zpwuopvtaz .gt_from_md > :first-child {
+#alpzoubrpx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zpwuopvtaz .gt_from_md > :last-child {
+#alpzoubrpx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zpwuopvtaz .gt_row {
+#alpzoubrpx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -682,7 +694,7 @@ make_two_gt(super_gt, pub_gt)
   overflow-x: hidden;
 }
 
-#zpwuopvtaz .gt_stub {
+#alpzoubrpx .gt_stub {
   color: #333333;
   background-color: #cce6f6;
   font-size: 100%;
@@ -694,7 +706,7 @@ make_two_gt(super_gt, pub_gt)
   padding-left: 12px;
 }
 
-#zpwuopvtaz .gt_summary_row {
+#alpzoubrpx .gt_summary_row {
   color: #333333;
   background-color: #cce6f6;
   text-transform: inherit;
@@ -704,7 +716,7 @@ make_two_gt(super_gt, pub_gt)
   padding-right: 5px;
 }
 
-#zpwuopvtaz .gt_first_summary_row {
+#alpzoubrpx .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -714,7 +726,7 @@ make_two_gt(super_gt, pub_gt)
   border-top-color: #D3D3D3;
 }
 
-#zpwuopvtaz .gt_grand_summary_row {
+#alpzoubrpx .gt_grand_summary_row {
   color: #333333;
   background-color: #cce6f6;
   text-transform: inherit;
@@ -724,7 +736,7 @@ make_two_gt(super_gt, pub_gt)
   padding-right: 5px;
 }
 
-#zpwuopvtaz .gt_first_grand_summary_row {
+#alpzoubrpx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -734,11 +746,11 @@ make_two_gt(super_gt, pub_gt)
   border-top-color: #D3D3D3;
 }
 
-#zpwuopvtaz .gt_striped {
+#alpzoubrpx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zpwuopvtaz .gt_table_body {
+#alpzoubrpx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -747,7 +759,7 @@ make_two_gt(super_gt, pub_gt)
   border-bottom-color: #D3D3D3;
 }
 
-#zpwuopvtaz .gt_footnotes {
+#alpzoubrpx .gt_footnotes {
   color: #333333;
   background-color: #cce6f6;
   border-bottom-style: none;
@@ -761,13 +773,13 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#zpwuopvtaz .gt_footnote {
+#alpzoubrpx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#zpwuopvtaz .gt_sourcenotes {
+#alpzoubrpx .gt_sourcenotes {
   color: #333333;
   background-color: #cce6f6;
   border-bottom-style: none;
@@ -781,208 +793,536 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#zpwuopvtaz .gt_sourcenote {
+#alpzoubrpx .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#zpwuopvtaz .gt_left {
+#alpzoubrpx .gt_left {
   text-align: left;
 }
 
-#zpwuopvtaz .gt_center {
+#alpzoubrpx .gt_center {
   text-align: center;
 }
 
-#zpwuopvtaz .gt_right {
+#alpzoubrpx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zpwuopvtaz .gt_font_normal {
+#alpzoubrpx .gt_font_normal {
   font-weight: normal;
 }
 
-#zpwuopvtaz .gt_font_bold {
+#alpzoubrpx .gt_font_bold {
   font-weight: bold;
 }
 
-#zpwuopvtaz .gt_font_italic {
+#alpzoubrpx .gt_font_italic {
   font-style: italic;
 }
 
-#zpwuopvtaz .gt_super {
+#alpzoubrpx .gt_super {
   font-size: 65%;
 }
 
-#zpwuopvtaz .gt_footnote_marks {
+#alpzoubrpx .gt_footnote_marks {
   font-style: italic;
-  font-weight: normal;
   font-size: 65%;
 }
 </style>
-<table class="gt_table">
+<div id="alpzoubrpx" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
-      <th colspan="2" class="gt_heading gt_title gt_font_normal gt_bottom_border" style>publishers</th>
+      <th colspan="2" class="gt_heading gt_title gt_font_normal" style>publishers</th>
     </tr>
-    
+    <tr>
+      <th colspan="2" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style></th>
+    </tr>
   </thead>
   <thead class="gt_col_headings">
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">publisher</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">yr_founded</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">yr_founded</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td class="gt_row gt_left">DC</td>
-<td class="gt_row gt_right">1934</td></tr>
-    <tr><td class="gt_row gt_left gt_striped">Marvel</td>
-<td class="gt_row gt_right gt_striped">1939</td></tr>
-    <tr><td class="gt_row gt_left">Image</td>
-<td class="gt_row gt_right">1992</td></tr>
+    <tr>
+      <td class="gt_row gt_left">DC</td>
+      <td class="gt_row gt_center">1934</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">Marvel</td>
+      <td class="gt_row gt_center gt_striped">1939</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Image</td>
+      <td class="gt_row gt_center">1992</td>
+    </tr>
   </tbody>
   
   
-</table>
-</div>
+</table></div>
 </td>
 </tr>
 </table>
 <div class="columns">
 
-    <div class="column2">
+<div class="column2">
 
-    <div class="formatSection">
-      <div class="formatSectionTitle">Documents</div>
-      <div class="formatTable">
-        <a href="https://bookdown.org/yihui/rmarkdown/notebook.html" class="formatTableRow">
-          <div class="formatName">Notebook</div>
-          <div class="formatDescription">Interactive R Notebooks</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/html-document.html" class="formatTableRow">
-          <div class="formatName">HTML</div>
-          <div class="formatDescription">HTML document w/ Bootstrap CSS</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/pdf-document.html" class="formatTableRow">
-          <div class="formatName">PDF</div>
-          <div class="formatDescription">PDF document (via LaTeX template)</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/word-document.html" class="formatTableRow">
-          <div class="formatName">Word</div>
-          <div class="formatDescription">Microsoft Word document (docx)</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/opendocument-text-document.html" class="formatTableRow">
-          <div class="formatName">ODT</div>
-          <div class="formatDescription">OpenDocument Text document</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/rich-text-format-document.html" class="formatTableRow">
-          <div class="formatName">RTF</div>
-          <div class="formatDescription">Rich Text Format document</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/markdown-document.html" class="formatTableRow">
-          <div class="formatName">Markdown</div>
-          <div class="formatDescription">Markdown document (various flavors)</div>
-        </a>
-      </div>
-    </div>
+<div class="formatSection">
 
-    <div class="formatSection">
-      <div class="formatSectionTitle">Presentations</div>
-      <div class="formatTable">
-        <a href="https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html" class="formatTableRow">
-          <div class="formatName">ioslides</div>
-          <div class="formatDescription">HTML presentation with ioslides</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/revealjs.html" class="formatTableRow">
-          <div class="formatName">reveal.js</div>
-          <div class="formatDescription">HTML presentation with reveal.js</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/slidy-presentation.html" class="formatTableRow">
-          <div class="formatName">Slidy</div>
-          <div class="formatDescription">HTML presentation with W3C Slidy</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/beamer-presentation.html" class="formatTableRow">
-          <div class="formatName">Beamer</div>
-          <div class="formatDescription">PDF presentation with LaTeX Beamer</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/powerpoint-presentation.html" class="formatTableRow">
-          <div class="formatName">PowerPoint</div>
-          <div class="formatDescription">PowerPoint presentation</div>
-        </a>
-      </div>
-    </div>
+<div class="formatSectionTitle">
 
-    </div>
+Documents
 
-    <div class="column2">
+</div>
 
-    <div class="formatSection">
-      <div class="formatSectionTitle">Journals</div>
-      <div class="formatTable">
-        <a href="https://rstudio.github.io/distill/" class="formatTableRow">
-          <div class="formatName">distill</div>
-          <div class="formatDescription">Scientific and technical writing for the web</div>
-        </a>
-        <a href="https://github.com/rstudio/rticles" class="formatTableRow">
-          <div class="formatName">jss_article</div>
-          <div class="formatDescription">Journal of Statistical Software (JSS)</div>
-        </a>
-        <a href="https://github.com/rstudio/rticles" class="formatTableRow">
-          <div class="formatName">acm_article</div>
-          <div class="formatDescription">Association for Computing Machinery (ACM)</div>
-        </a>
-        <a href="https://github.com/rstudio/rticles" class="formatTableRow">
-          <div class="formatName">acs_article</div>
-          <div class="formatDescription">American Chemical Society (ACS) Journal</div>
-        </a>
-        <a href="https://github.com/rstudio/rticles" class="formatTableRow">
-          <div class="formatName">ctex</div>
-          <div class="formatDescription">Documents based on the LaTeX package ctex</div>
-        </a>
-        <a href="https://github.com/rstudio/rticles" class="formatTableRow">
-          <div class="formatName">elsevier_article</div>
-          <div class="formatDescription">Submissions to Elsevier journals</div>
-        </a>
-      </div>
-    </div>
+<div class="formatTable">
 
-    <div class="formatSection">
-      <div class="formatSectionTitle">More</div>
-      <div class="formatTable">
-        <a href="flexdashboard/index.html" class="formatTableRow">
-          <div class="formatName">flexdashboard</div>
-          <div class="formatDescription">Interactive dashboards</div>
-        </a>
-        <a href="https://bookdown.org" class="formatTableRow">
-          <div class="formatName">bookdown</div>
-          <div class="formatDescription">HTML, PDF, ePub, and Kindle books</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html" class="formatTableRow">
-          <div class="formatName">Websites</div>
-          <div class="formatDescription">Multi-page websites</div>
-        </a>
-        <a href="https://bookdown.org/yihui/blogdown/" class="formatTableRow">
-          <div class="formatName">blogdown</div>
-          <div class="formatDescription">Customizable websites and blogs</div>
-        </a>
-        <a href="https://pkgdown.r-lib.org/" class="formatTableRow">
-          <div class="formatName">pkgdown</div>
-          <div class="formatDescription">Package documentation websites</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/tufte-handouts.html" class="formatTableRow">
-          <div class="formatName">Tufte Handout</div>
-          <div class="formatDescription">Handouts in the style of Edward Tufte</div>
-        </a>
-        <a href="https://bookdown.org/yihui/rmarkdown/r-package-vignette.html" class="formatTableRow">
-          <div class="formatName">Package Vignette</div>
-          <div class="formatDescription">R package vignette (HTML)</div>
-        </a>
-        <a href="github_document_format.html" class="formatTableRow">
-          <div class="formatName">Github Document</div>
-          <div class="formatDescription">GitHub Flavored Markdown document.</div>
-        </a>
-      </div>
-    </div>
+<a href="https://bookdown.org/yihui/rmarkdown/notebook.html" class="formatTableRow">
 
-    </div>
+<div class="formatName">
+
+Notebook
+
+</div>
+
+<div class="formatDescription">
+
+Interactive R Notebooks
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/html-document.html" class="formatTableRow">
+
+<div class="formatName">
+
+HTML
+
+</div>
+
+<div class="formatDescription">
+
+HTML document w/ Bootstrap CSS
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/pdf-document.html" class="formatTableRow">
+
+<div class="formatName">
+
+PDF
+
+</div>
+
+<div class="formatDescription">
+
+PDF document (via LaTeX template)
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/word-document.html" class="formatTableRow">
+
+<div class="formatName">
+
+Word
+
+</div>
+
+<div class="formatDescription">
+
+Microsoft Word document (docx)
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/opendocument-text-document.html" class="formatTableRow">
+
+<div class="formatName">
+
+ODT
+
+</div>
+
+<div class="formatDescription">
+
+OpenDocument Text document
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/rich-text-format-document.html" class="formatTableRow">
+
+<div class="formatName">
+
+RTF
+
+</div>
+
+<div class="formatDescription">
+
+Rich Text Format document
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/markdown-document.html" class="formatTableRow">
+
+<div class="formatName">
+
+Markdown
+
+</div>
+
+<div class="formatDescription">
+
+Markdown document (various flavors)
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="formatSection">
+
+<div class="formatSectionTitle">
+
+Presentations
+
+</div>
+
+<div class="formatTable">
+
+<a href="https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html" class="formatTableRow">
+
+<div class="formatName">
+
+ioslides
+
+</div>
+
+<div class="formatDescription">
+
+HTML presentation with ioslides
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/revealjs.html" class="formatTableRow">
+
+<div class="formatName">
+
+reveal.js
+
+</div>
+
+<div class="formatDescription">
+
+HTML presentation with reveal.js
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/slidy-presentation.html" class="formatTableRow">
+
+<div class="formatName">
+
+Slidy
+
+</div>
+
+<div class="formatDescription">
+
+HTML presentation with W3C Slidy
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/beamer-presentation.html" class="formatTableRow">
+
+<div class="formatName">
+
+Beamer
+
+</div>
+
+<div class="formatDescription">
+
+PDF presentation with LaTeX Beamer
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/powerpoint-presentation.html" class="formatTableRow">
+
+<div class="formatName">
+
+PowerPoint
+
+</div>
+
+<div class="formatDescription">
+
+PowerPoint presentation
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="column2">
+
+<div class="formatSection">
+
+<div class="formatSectionTitle">
+
+Journals
+
+</div>
+
+<div class="formatTable">
+
+<a href="https://rstudio.github.io/distill/" class="formatTableRow">
+
+<div class="formatName">
+
+distill
+
+</div>
+
+<div class="formatDescription">
+
+Scientific and technical writing for the web
+
+</div>
+
+</a>
+<a href="https://github.com/rstudio/rticles" class="formatTableRow">
+
+<div class="formatName">
+
+jss\_article
+
+</div>
+
+<div class="formatDescription">
+
+Journal of Statistical Software (JSS)
+
+</div>
+
+</a>
+<a href="https://github.com/rstudio/rticles" class="formatTableRow">
+
+<div class="formatName">
+
+acm\_article
+
+</div>
+
+<div class="formatDescription">
+
+Association for Computing Machinery (ACM)
+
+</div>
+
+</a>
+<a href="https://github.com/rstudio/rticles" class="formatTableRow">
+
+<div class="formatName">
+
+acs\_article
+
+</div>
+
+<div class="formatDescription">
+
+American Chemical Society (ACS) Journal
+
+</div>
+
+</a>
+<a href="https://github.com/rstudio/rticles" class="formatTableRow">
+
+<div class="formatName">
+
+ctex
+
+</div>
+
+<div class="formatDescription">
+
+Documents based on the LaTeX package ctex
+
+</div>
+
+</a>
+<a href="https://github.com/rstudio/rticles" class="formatTableRow">
+
+<div class="formatName">
+
+elsevier\_article
+
+</div>
+
+<div class="formatDescription">
+
+Submissions to Elsevier journals
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="formatSection">
+
+<div class="formatSectionTitle">
+
+More
+
+</div>
+
+<div class="formatTable">
+
+<a href="flexdashboard/index.html" class="formatTableRow">
+
+<div class="formatName">
+
+flexdashboard
+
+</div>
+
+<div class="formatDescription">
+
+Interactive dashboards
+
+</div>
+
+</a>
+<a href="https://bookdown.org" class="formatTableRow">
+
+<div class="formatName">
+
+bookdown
+
+</div>
+
+<div class="formatDescription">
+
+HTML, PDF, ePub, and Kindle books
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html" class="formatTableRow">
+
+<div class="formatName">
+
+Websites
+
+</div>
+
+<div class="formatDescription">
+
+Multi-page websites
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/blogdown/" class="formatTableRow">
+
+<div class="formatName">
+
+blogdown
+
+</div>
+
+<div class="formatDescription">
+
+Customizable websites and blogs
+
+</div>
+
+</a>
+<a href="https://pkgdown.r-lib.org/" class="formatTableRow">
+
+<div class="formatName">
+
+pkgdown
+
+</div>
+
+<div class="formatDescription">
+
+Package documentation websites
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/tufte-handouts.html" class="formatTableRow">
+
+<div class="formatName">
+
+Tufte Handout
+
+</div>
+
+<div class="formatDescription">
+
+Handouts in the style of Edward Tufte
+
+</div>
+
+</a>
+<a href="https://bookdown.org/yihui/rmarkdown/r-package-vignette.html" class="formatTableRow">
+
+<div class="formatName">
+
+Package Vignette
+
+</div>
+
+<div class="formatDescription">
+
+R package vignette (HTML)
+
+</div>
+
+</a>
+<a href="github_document_format.html" class="formatTableRow">
+
+<div class="formatName">
+
+Github Document
+
+</div>
+
+<div class="formatDescription">
+
+GitHub Flavored Markdown document.
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
