@@ -16,3 +16,5 @@ scale_hex <- function(hex) {
 }
 
 purrr::map(rmd_pngs, scale_hex)
+
+xfun::optipng(dir = "static/css/images/hex/")
