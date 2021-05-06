@@ -96,7 +96,7 @@ img.focal {
 
 .column25-left .section:nth-child(n+2) a.sectionTitle { 
   font-size: 1rem;
-  letter-spacing: 1pt;
+  letter-spacing: .1em;
 }
 
 /* Numbers in sidebar */
