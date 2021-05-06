@@ -1,6 +1,6 @@
 ---
 title: Get Started
-subtitle: Introduction
+subtitle: Welcome
 description: "What do you need to know to start using R Markdown? Learn what you need in this quick tour."
 ---
 

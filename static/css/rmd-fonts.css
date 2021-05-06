@@ -14,24 +14,6 @@ a.learn-top-nav-item,
 }
 */
 
-/* Tutorial sidebar, all but 1st child -- Words, not number prefix */ 
-/*
-.column25-left .section:nth-child(n+2) a.sectionTitle { 
-  font-size: 1rem;
-  letter-spacing: 1pt;
-}
-*/
-
-/* Numbers in sidebar */
-.column25-left .sectionTitle { 
-  display: flex; 
-  text-transform: uppercase;
-  letter-spacing: 2pt; 
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-
 /*.articleCategory {
 	font-size: 1rem;
 	padding-left: 0px;
