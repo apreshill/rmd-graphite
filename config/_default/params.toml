@@ -63,7 +63,7 @@ MathJaxVersion = "2.7.1"
 # then, the layouts/partials/head_includes.html uses that partial
 # the partial head_includes.html is called in the partial header.html everywhere!
 [colors]
-    text = "#053439" # rich black
+    text = "#404040" # charcoal
     # Links
     link = "#096B72" #094a44
     link_hover = "#405359"
@@ -76,9 +76,9 @@ MathJaxVersion = "2.7.1"
     home_section_even = "#fcfcfc"
     # Menu
     menu_primary = "white"
-    menu_text = "#096B72"
-    menu_text_active = "#405359"
-    menu_text_current = "#405359"
+    menu_text = "#404040"
+    menu_text_active = "#027F85"
+    menu_text_current = "#096B72"
     menu_decorate_current = "none"
     menu_title = "#096B72" # product name
     menu_title_active = "#405359" # hover product name
@@ -110,7 +110,7 @@ MathJaxVersion = "2.7.1"
     color_secondary = "#013631" #405359
     
 [bullets]
-    color = "#79BEEE"
+    color = "#027F85"
     
 [hexes]
     thin_hex = true
