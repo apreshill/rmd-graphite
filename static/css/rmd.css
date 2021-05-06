@@ -94,6 +94,7 @@ img.focal {
 
 /* get started sidebar actions */
 
+/*
 .articleCategory a:hover, 
 .column25-left .section:nth-child(n+2) a.sectionTitle:hover, 
 .column16-left .section:nth-child(n+2) a.sectionTitle:hover {
@@ -101,18 +102,21 @@ img.focal {
   padding-left: 10px;
   text-indent: -2px;
 }
+*/
 
+/*
 .column25-left .section a.sectionTitle, 
 .column16-left .section a.sectionTitle {
-    padding: 4px 20px 4px 10px; /* Left-padding changed from 6px to 5px, so shift left does not happen on hover */
-}
+    padding: 4px 20px 4px 10px; /* Left-padding changed from 6px to 5px, so shift left does not happen on hover 
+}*/
 
+/*
 .column25-left .section:nth-child(n+2) a.sectionTitle.current, 
 .column16-left .section:nth-child(n+2) a.sectionTitle.current {
   border-left: 3px solid #79beee;
   padding-left: 10px;
   text-indent: -2px;
-}
+}*/
 
 .splitColumns .column85 {
     padding-left: 1.5em; 
@@ -135,39 +139,69 @@ h1.tutorial.learning-objective {
   font-style: italic !important;
 }
 
+
 /* --------------Two columns--------------- */
 
-.col2 {
-  columns: 2 200px;         /* number of columns and width in pixels*/
-  -webkit-columns: 2 200px; /* chrome, safari */
-  -moz-columns: 2 200px;    /* firefox */
-}
-
-
-.side-by-side {
+.twocols {
   display: flex;
 }
 
-.side1 {
+.narrow-left {
   width: 30%;
+  padding-right: 1rem;
 }
 
-.side2 {
-  width: 68%;
-  margin-left: 1rem;
+.wide-right {
+  width: 70%;
+  padding-left: 2rem;
+}
+
+.narrow-right {
+  width: 30%;
+  padding-left: 1rem;
+}
+
+.wide-left {
+  width: 70%;
+  padding-right: 2rem;
 }
 
 /* --------------Even split- two columns--------------- */
 
-.split {
-  display: flex;
+.even-left {
+  width: 50%;
+  padding-right: 1rem;
 }
 
-.split1 {
+.even-right {
   width: 50%;
-  padding-right: 20px;
+  padding-left: 1rem;
 }
 
-.split2 {
-  width: 50%;
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+
+/* --------------Add measure to make more readable text--------------- */
+
+.column85 > .article-content > p:not(img),
+.column85 > .article-content > ul li {
+  max-width: 40em;
+}
+
+.column25-left {
+	padding-top: 20px;
+	padding-right: 2em;
+	max-width: 250px;
+}
+
+pre {
+	padding: 1rem;
+	border-radius: .125rem;
+}
+
+.single-learning-objective-text {
+	color: #314341;
+	font-style: italic;
 }

@@ -4,15 +4,7 @@ subtitle: Introduction
 description: "What do you need to know to start using R Markdown? Learn what you need in this quick tour."
 ---
 
-## What is R Markdown?
 
-R Markdown is a tool designed for anyone who uses code to work with data. You can use R Markdown at any stage of an analysis project, any time you want to develop code and ideas alongside each other. 
-
-Start an R Markdown project if you want to:
-
-* Save, execute, and explain your code, all in the same place. 
-
-* Transform your code into polished and professional data products&mdash;reports, dashboards, websites, slides, even books&mdash;that are ready to be shared.
 
 Watch this 1-minute video to see what is possible with R Markdown:
 

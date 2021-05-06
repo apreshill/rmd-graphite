@@ -16,5 +16,8 @@ description: |
 
 + https://r4ds.had.co.nz/r-markdown.html#troubleshooting
 
++ https://yihui.org/knitr/faq/
 
++ https://ismayc.github.io/rbasics-book/4-rmarkdown.html#fixerrors
 
++ file paths/here package

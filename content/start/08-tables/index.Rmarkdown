@@ -1,6 +1,6 @@
 ---
 title: "Tables"
-weight: 7
+weight: 8
 description: | 
   Use parameters to re-render the same output with different versions of your data, or depending on different values present in your data.
 ---

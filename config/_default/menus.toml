@@ -14,10 +14,6 @@
     url = "/explore/"
     weight = 3
 [[main]]
-    name = "Learn"
-    url = "/learn/"
-    weight = 4
-[[main]]
     name = "Community"
     url = "/community/"
-    weight = 5
+    weight = 4

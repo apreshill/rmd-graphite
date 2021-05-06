@@ -3,7 +3,11 @@ title: "Formats"
 layout: standard
 ---
 
+## help me
+
 yes hello
+
+{{&lt; youtube w7Ft2ymGmfc &gt;}}
 
 ``` r
 library(gt)
@@ -12,7 +16,7 @@ library(gt)
 # used alongside CSS
 style_table <- function(data, table_title) {
   data %>% 
-  gt() %>% 
+  gt(id = "specialness") %>% 
   tab_header(
     title = table_title
   ) %>% 
@@ -23,17 +27,27 @@ style_table <- function(data, table_title) {
     column_labels.font.size = pct(90),
     table.width = "100%",
     row.striping.include_table_body = TRUE
+  ) %>% 
+  opt_css(
+    css = "
+    table tbody tr {
+      background-color: transparent;
+    }
+    #specialness thead {
+      color: red !important;
+    }
+    "
   )
 }
 
 make_two_gt <- function(gt_left, gt_right, ...) {
-  htmltools::withTags(
-  table(style = "width: 100%; border: 0px;",
-    tr(
-      td(style = glue::glue("width: 50%; vertical-align: top;"),
+  htmltools::tagList(
+  htmltools::tags$div(style = "width: 100%; border: 0px;",
+    htmltools::tags$tr(
+      htmltools::tags$td(style = glue::glue("width: 50%; vertical-align: top;"),
         gt:::as.tags.gt_tbl(gt_left)
       ),
-      td(style = glue::glue("width: 50%; vertical-align: top;"),
+      htmltools::tags$td(style = glue::glue("width: 50%; vertical-align: top;"),
         gt:::as.tags.gt_tbl(gt_right)
       )
     )
@@ -91,14 +105,14 @@ pub_gt <- style_table(publishers, "publishers") %>%
 make_two_gt(super_gt, pub_gt)
 ```
 
-<table style="width: 100%; border: 0px;">
+<div style="width: 100%; border: 0px;">
 <tr>
 <td style="width: 50%; vertical-align: top;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ldeenunxgt .gt_table {
+#specialness .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: 0;
@@ -123,7 +137,7 @@ make_two_gt(super_gt, pub_gt)
   border-left-color: #D3D3D3;
 }
 
-#ldeenunxgt .gt_heading {
+#specialness .gt_heading {
   background-color: #edc7fc;
   text-align: center;
   border-bottom-color: #edc7fc;
@@ -135,7 +149,7 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#ldeenunxgt .gt_title {
+#specialness .gt_title {
   color: #333333;
   font-size: 90%;
   font-weight: initial;
@@ -145,7 +159,7 @@ make_two_gt(super_gt, pub_gt)
   border-bottom-width: 0;
 }
 
-#ldeenunxgt .gt_subtitle {
+#specialness .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -155,13 +169,13 @@ make_two_gt(super_gt, pub_gt)
   border-top-width: 0;
 }
 
-#ldeenunxgt .gt_bottom_border {
+#specialness .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ldeenunxgt .gt_col_headings {
+#specialness .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -176,7 +190,7 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#ldeenunxgt .gt_col_heading {
+#specialness .gt_col_heading {
   color: #333333;
   background-color: #edc7fc;
   font-size: 90%;
@@ -196,7 +210,7 @@ make_two_gt(super_gt, pub_gt)
   overflow-x: hidden;
 }
 
-#ldeenunxgt .gt_column_spanner_outer {
+#specialness .gt_column_spanner_outer {
   color: #333333;
   background-color: #edc7fc;
   font-size: 90%;
@@ -208,15 +222,15 @@ make_two_gt(super_gt, pub_gt)
   padding-right: 4px;
 }
 
-#ldeenunxgt .gt_column_spanner_outer:first-child {
+#specialness .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ldeenunxgt .gt_column_spanner_outer:last-child {
+#specialness .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ldeenunxgt .gt_column_spanner {
+#specialness .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -228,7 +242,7 @@ make_two_gt(super_gt, pub_gt)
   width: 100%;
 }
 
-#ldeenunxgt .gt_group_heading {
+#specialness .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #edc7fc;
@@ -250,7 +264,7 @@ make_two_gt(super_gt, pub_gt)
   vertical-align: middle;
 }
 
-#ldeenunxgt .gt_empty_group_heading {
+#specialness .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #edc7fc;
@@ -265,15 +279,15 @@ make_two_gt(super_gt, pub_gt)
   vertical-align: middle;
 }
 
-#ldeenunxgt .gt_from_md > :first-child {
+#specialness .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ldeenunxgt .gt_from_md > :last-child {
+#specialness .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ldeenunxgt .gt_row {
+#specialness .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -292,7 +306,7 @@ make_two_gt(super_gt, pub_gt)
   overflow-x: hidden;
 }
 
-#ldeenunxgt .gt_stub {
+#specialness .gt_stub {
   color: #333333;
   background-color: #edc7fc;
   font-size: 100%;
@@ -304,7 +318,7 @@ make_two_gt(super_gt, pub_gt)
   padding-left: 12px;
 }
 
-#ldeenunxgt .gt_summary_row {
+#specialness .gt_summary_row {
   color: #333333;
   background-color: #edc7fc;
   text-transform: inherit;
@@ -314,7 +328,7 @@ make_two_gt(super_gt, pub_gt)
   padding-right: 5px;
 }
 
-#ldeenunxgt .gt_first_summary_row {
+#specialness .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -324,7 +338,7 @@ make_two_gt(super_gt, pub_gt)
   border-top-color: #D3D3D3;
 }
 
-#ldeenunxgt .gt_grand_summary_row {
+#specialness .gt_grand_summary_row {
   color: #333333;
   background-color: #edc7fc;
   text-transform: inherit;
@@ -334,7 +348,7 @@ make_two_gt(super_gt, pub_gt)
   padding-right: 5px;
 }
 
-#ldeenunxgt .gt_first_grand_summary_row {
+#specialness .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -344,11 +358,11 @@ make_two_gt(super_gt, pub_gt)
   border-top-color: #D3D3D3;
 }
 
-#ldeenunxgt .gt_striped {
+#specialness .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ldeenunxgt .gt_table_body {
+#specialness .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -357,7 +371,7 @@ make_two_gt(super_gt, pub_gt)
   border-bottom-color: #D3D3D3;
 }
 
-#ldeenunxgt .gt_footnotes {
+#specialness .gt_footnotes {
   color: #333333;
   background-color: #edc7fc;
   border-bottom-style: none;
@@ -371,13 +385,13 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#ldeenunxgt .gt_footnote {
+#specialness .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#ldeenunxgt .gt_sourcenotes {
+#specialness .gt_sourcenotes {
   color: #333333;
   background-color: #edc7fc;
   border-bottom-style: none;
@@ -391,46 +405,54 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#ldeenunxgt .gt_sourcenote {
+#specialness .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#ldeenunxgt .gt_left {
+#specialness .gt_left {
   text-align: left;
 }
 
-#ldeenunxgt .gt_center {
+#specialness .gt_center {
   text-align: center;
 }
 
-#ldeenunxgt .gt_right {
+#specialness .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ldeenunxgt .gt_font_normal {
+#specialness .gt_font_normal {
   font-weight: normal;
 }
 
-#ldeenunxgt .gt_font_bold {
+#specialness .gt_font_bold {
   font-weight: bold;
 }
 
-#ldeenunxgt .gt_font_italic {
+#specialness .gt_font_italic {
   font-style: italic;
 }
 
-#ldeenunxgt .gt_super {
+#specialness .gt_super {
   font-size: 65%;
 }
 
-#ldeenunxgt .gt_footnote_marks {
+#specialness .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
+}
+
+table tbody tr {
+  background-color: transparent;
+}
+
+#specialness thead {
+  color: red !important;
 }
 </style>
-<div id="ldeenunxgt" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="specialness" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="4" class="gt_heading gt_title gt_font_normal" style>superheroes</th>
@@ -500,7 +522,7 @@ make_two_gt(super_gt, pub_gt)
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#alpzoubrpx .gt_table {
+#specialness .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: 0;
@@ -525,7 +547,7 @@ make_two_gt(super_gt, pub_gt)
   border-left-color: #D3D3D3;
 }
 
-#alpzoubrpx .gt_heading {
+#specialness .gt_heading {
   background-color: #cce6f6;
   text-align: center;
   border-bottom-color: #cce6f6;
@@ -537,7 +559,7 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#alpzoubrpx .gt_title {
+#specialness .gt_title {
   color: #333333;
   font-size: 90%;
   font-weight: initial;
@@ -547,7 +569,7 @@ make_two_gt(super_gt, pub_gt)
   border-bottom-width: 0;
 }
 
-#alpzoubrpx .gt_subtitle {
+#specialness .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -557,13 +579,13 @@ make_two_gt(super_gt, pub_gt)
   border-top-width: 0;
 }
 
-#alpzoubrpx .gt_bottom_border {
+#specialness .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#alpzoubrpx .gt_col_headings {
+#specialness .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -578,7 +600,7 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#alpzoubrpx .gt_col_heading {
+#specialness .gt_col_heading {
   color: #333333;
   background-color: #cce6f6;
   font-size: 90%;
@@ -598,7 +620,7 @@ make_two_gt(super_gt, pub_gt)
   overflow-x: hidden;
 }
 
-#alpzoubrpx .gt_column_spanner_outer {
+#specialness .gt_column_spanner_outer {
   color: #333333;
   background-color: #cce6f6;
   font-size: 90%;
@@ -610,15 +632,15 @@ make_two_gt(super_gt, pub_gt)
   padding-right: 4px;
 }
 
-#alpzoubrpx .gt_column_spanner_outer:first-child {
+#specialness .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#alpzoubrpx .gt_column_spanner_outer:last-child {
+#specialness .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#alpzoubrpx .gt_column_spanner {
+#specialness .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -630,7 +652,7 @@ make_two_gt(super_gt, pub_gt)
   width: 100%;
 }
 
-#alpzoubrpx .gt_group_heading {
+#specialness .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #cce6f6;
@@ -652,7 +674,7 @@ make_two_gt(super_gt, pub_gt)
   vertical-align: middle;
 }
 
-#alpzoubrpx .gt_empty_group_heading {
+#specialness .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #cce6f6;
@@ -667,15 +689,15 @@ make_two_gt(super_gt, pub_gt)
   vertical-align: middle;
 }
 
-#alpzoubrpx .gt_from_md > :first-child {
+#specialness .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#alpzoubrpx .gt_from_md > :last-child {
+#specialness .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#alpzoubrpx .gt_row {
+#specialness .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -694,7 +716,7 @@ make_two_gt(super_gt, pub_gt)
   overflow-x: hidden;
 }
 
-#alpzoubrpx .gt_stub {
+#specialness .gt_stub {
   color: #333333;
   background-color: #cce6f6;
   font-size: 100%;
@@ -706,7 +728,7 @@ make_two_gt(super_gt, pub_gt)
   padding-left: 12px;
 }
 
-#alpzoubrpx .gt_summary_row {
+#specialness .gt_summary_row {
   color: #333333;
   background-color: #cce6f6;
   text-transform: inherit;
@@ -716,7 +738,7 @@ make_two_gt(super_gt, pub_gt)
   padding-right: 5px;
 }
 
-#alpzoubrpx .gt_first_summary_row {
+#specialness .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -726,7 +748,7 @@ make_two_gt(super_gt, pub_gt)
   border-top-color: #D3D3D3;
 }
 
-#alpzoubrpx .gt_grand_summary_row {
+#specialness .gt_grand_summary_row {
   color: #333333;
   background-color: #cce6f6;
   text-transform: inherit;
@@ -736,7 +758,7 @@ make_two_gt(super_gt, pub_gt)
   padding-right: 5px;
 }
 
-#alpzoubrpx .gt_first_grand_summary_row {
+#specialness .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -746,11 +768,11 @@ make_two_gt(super_gt, pub_gt)
   border-top-color: #D3D3D3;
 }
 
-#alpzoubrpx .gt_striped {
+#specialness .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#alpzoubrpx .gt_table_body {
+#specialness .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -759,7 +781,7 @@ make_two_gt(super_gt, pub_gt)
   border-bottom-color: #D3D3D3;
 }
 
-#alpzoubrpx .gt_footnotes {
+#specialness .gt_footnotes {
   color: #333333;
   background-color: #cce6f6;
   border-bottom-style: none;
@@ -773,13 +795,13 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#alpzoubrpx .gt_footnote {
+#specialness .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#alpzoubrpx .gt_sourcenotes {
+#specialness .gt_sourcenotes {
   color: #333333;
   background-color: #cce6f6;
   border-bottom-style: none;
@@ -793,46 +815,54 @@ make_two_gt(super_gt, pub_gt)
   border-right-color: #D3D3D3;
 }
 
-#alpzoubrpx .gt_sourcenote {
+#specialness .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#alpzoubrpx .gt_left {
+#specialness .gt_left {
   text-align: left;
 }
 
-#alpzoubrpx .gt_center {
+#specialness .gt_center {
   text-align: center;
 }
 
-#alpzoubrpx .gt_right {
+#specialness .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#alpzoubrpx .gt_font_normal {
+#specialness .gt_font_normal {
   font-weight: normal;
 }
 
-#alpzoubrpx .gt_font_bold {
+#specialness .gt_font_bold {
   font-weight: bold;
 }
 
-#alpzoubrpx .gt_font_italic {
+#specialness .gt_font_italic {
   font-style: italic;
 }
 
-#alpzoubrpx .gt_super {
+#specialness .gt_super {
   font-size: 65%;
 }
 
-#alpzoubrpx .gt_footnote_marks {
+#specialness .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
+}
+
+table tbody tr {
+  background-color: transparent;
+}
+
+#specialness thead {
+  color: red !important;
 }
 </style>
-<div id="alpzoubrpx" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="specialness" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="2" class="gt_heading gt_title gt_font_normal" style>publishers</th>
@@ -866,7 +896,7 @@ make_two_gt(super_gt, pub_gt)
 </table></div>
 </td>
 </tr>
-</table>
+</div>
 <div class="columns">
 
 <div class="column2">
@@ -1320,8 +1350,6 @@ GitHub Flavored Markdown document.
 </div>
 
 </a>
-
-</div>
 
 </div>
 

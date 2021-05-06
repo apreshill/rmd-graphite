@@ -2,8 +2,15 @@
 title: "Formats"
 layout: standard
 ---
+
+## help me
+
   
 yes hello
+
+
+{{< youtube w7Ft2ymGmfc >}}
+
 ```{r}
 library(gt)
 
@@ -11,7 +18,7 @@ library(gt)
 # used alongside CSS
 style_table <- function(data, table_title) {
   data %>% 
-  gt() %>% 
+  gt(id = "specialness") %>% 
   tab_header(
     title = table_title
   ) %>% 
@@ -22,17 +29,27 @@ style_table <- function(data, table_title) {
     column_labels.font.size = pct(90),
     table.width = "100%",
     row.striping.include_table_body = TRUE
+  ) %>% 
+  opt_css(
+    css = "
+    table tbody tr {
+      background-color: transparent;
+    }
+    #specialness thead {
+      color: red !important;
+    }
+    "
   )
 }
 
 make_two_gt <- function(gt_left, gt_right, ...) {
-  htmltools::withTags(
-  table(style = "width: 100%; border: 0px;",
-    tr(
-      td(style = glue::glue("width: 50%; vertical-align: top;"),
+  htmltools::tagList(
+  htmltools::tags$div(style = "width: 100%; border: 0px;",
+    htmltools::tags$tr(
+      htmltools::tags$td(style = glue::glue("width: 50%; vertical-align: top;"),
         gt:::as.tags.gt_tbl(gt_left)
       ),
-      td(style = glue::glue("width: 50%; vertical-align: top;"),
+      htmltools::tags$td(style = glue::glue("width: 50%; vertical-align: top;"),
         gt:::as.tags.gt_tbl(gt_right)
       )
     )
@@ -75,6 +92,10 @@ pub_gt <- style_table(publishers, "publishers") %>%
 ```{r}
 make_two_gt(super_gt, pub_gt)
 ```
+
+
+
+  
 
   
 <div class="columns">
@@ -212,5 +233,4 @@ make_two_gt(super_gt, pub_gt)
 </div>
 </div>
 
-</div>
 

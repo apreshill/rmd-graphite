@@ -1,6 +1,6 @@
 ---
 title: "Knitting"
-weight: 2
+weight: 3
 description: | 
   Keep your source code readable, and your output reproducible.
 ---
@@ -11,11 +11,11 @@ R Markdown is designed to keep your source code separate from your output. Why? 
 
 ## Knitting the source file
 
-{{< columns class="side-by-side" >}}
-{{< column name="side1" >}}
+{{< columns class="twocols" >}}
+{{< column name="narrow-left" >}}
 ![](rmarkdown_hedgehog.png)
 {{< /column >}}
-{{< column name="side2" >}}
+{{< column name="wide-right" >}}
 The file extension `.Rmd` makes your file **executable**, which means that this file can be used to both save *and* execute code. Here is a code chunk:
 
 ````
@@ -39,8 +39,8 @@ NOTE: You may also use keyboard shortcuts to knit:
 
 ## The output file
 
-{{< columns class="split" >}}
-{{< column name="split1" >}}
+{{< columns class="twocols" >}}
+{{< column name="even-left" >}}
 When we knit, R Markdown generates a new file that now contains four elements: 
 
 -   Metadata at the top (we see the title)
@@ -48,7 +48,7 @@ When we knit, R Markdown generates a new file that now contains four elements:
 -   A code chunk (but we only see one...)
 -   Results (a plot!) 
 {{< /column >}}
-{{< column name="split2" >}}
+{{< column name="even-right" >}}
 ![](01-output.png)
 {{< /column >}}
 {{< /columns  >}}
@@ -56,8 +56,8 @@ When we knit, R Markdown generates a new file that now contains four elements:
 
 ## The output format
 
-{{< columns class="split" >}}
-{{< column name="split1" >}}
+{{< columns class="twocols" >}}
+{{< column name="even-left" >}}
 This output file is an HTML document. This is a type of output, which was stored in the document's metadata block:
 
 ```yaml
@@ -69,7 +69,7 @@ output: html_document
 
 Output formats are one of the most versatile features of R Markdown&mdash;you can use them to build web pages like this one, Word documents, PDFs, multi-page websites, slides, and even write books.
 {{< /column >}}
-{{< column name="split2" >}}
+{{< column name="even-right" >}}
 ![](hedgehog-projects.jpg)
 {{< /column >}}
 {{< /columns  >}}

@@ -2,9 +2,15 @@
 title: Packages
 ---
 
+The R Markdown ecosystem is a collection of free and open source packages, developed and maintained by [RStudio, PBC](https://rstudio.com/). 
+
 ## Installation and use
 
-* Install R Markdown by running `install.packages("rmarkdown")`.
+Install R Markdown by running:
+
+```r
+install.packages("rmarkdown")
+```
 
 The rmarkdown package provides many different output formats "out of the box" including HTML pages, Word documents, and PDFs. 
 

@@ -1,59 +1,35 @@
 ---
 title: "Coding"
-weight: 1
+weight: 2
 description: | 
   Use R Markdown to develop code and ideas together in one single reproducible document.
 ---
 
 
-## The source file
-
-<div class = "split">
-<div class = "split1">
-
-This is an R Markdown file. 
-
-Every R Markdown file has the extension `.Rmd`. This particular one analyzes children's early words, but every `.Rmd` includes the same three basic elements inside:
-
--   A block of metadata at the top, between two fences of `---`s. This is written in [YAML](https://learnxinyminutes.com/docs/yaml/).
--   Narrative text, written in [Markdown](https://commonmark.org/help/tutorial/).
--   Code chunks in gray, written in R or another programming language.
-
-You can use all three elements to develop your code and ideas in one reproducible document. 
-
-</div>
-<div class = "split2">
-
-![](01-source.png)
-
-
-</div>
-</div>
-
 ## Develop code
 
-<div class = "split">
-<div class = "split1">
+{{< columns class="twocols" >}}
+{{< column name="even-left" >}}
 
 The code inside your R Markdown documents will often start small, then grow as you work. 
 
-It is totally natural to use your `.Rmd` as a scratchpad to develop code. A lot of users find it helps them do "coding while thinking."
+It is totally natural to use your `.Rmd` as a scratchpad to develop code. Many users find that using `.Rmd` files helps them "code while thinking."
 
 `.Rmd` files are designed to be used interactively in RStudio. You can use RStudio to test your code one chunk at a time, which we'll show now.
 
-</div>
-<div class = "split2">
+{{< /column >}}
+{{< column name="even-right" >}}
 
 ![](pattern.png)
 
-</div>
-</div>
+{{< /column >}}
+{{< /columns  >}}
 
 
 ## Run code chunks
 
-<div class = "split">
-<div class = "split1">
+{{< columns class="twocols" >}}
+{{< column name="even-left" >}}
 
 For every gray code chunk, you'll notice a green arrow on the right: ![](run-button.png)
 
@@ -64,18 +40,18 @@ If you run the second chunk after the first, it also works! This is because RStu
 
 Results like plots and tables are appear inline in your document- but don't get confused, your source `.Rmd` file still has not changed.
 
-</div>
-<div class = "split2">
+{{< /column >}}
+{{< column name="even-right" >}}
 
 <iframe src="https://drive.google.com/file/d/1z_eFA5HhZm9cM6UhOGtXWNar5Ym1I-tU/preview" width="540" height="480"></iframe>
 
-</div>
-</div>
+{{< /column >}}
+{{< /columns  >}}
 
 ## Add new code chunks
 
-<div class = "split">
-<div class = "split1">
+{{< columns class="twocols" >}}
+{{< column name="even-left" >}}
 
 Now let's add a new code chunk. You can insert chunks any of three ways:
 
@@ -86,13 +62,13 @@ Now let's add a new code chunk. You can insert chunks any of three ways:
 + type ` ```{r} ` and ` ``` ` (the symbols are backticks)
 
 
-</div>
-<div class = "split2">
+{{< /column >}}
+{{< column name="even-right" >}}
 
 <iframe src="https://drive.google.com/file/d/1a-TZaQCKrpP144Oeky-xqUzkqP_J6tsb/preview" width="540" height="480"></iframe>
 
-</div>
-</div>
+{{< /column >}}
+{{< /columns  >}}
 
 ## Edit code chunks
 
@@ -111,8 +87,9 @@ The main differences here are:
 
 ## Set up your panes
 
-<div class = "split">
-<div class = "split1">
+
+{{< columns class="twocols" >}}
+{{< column name="even-left" >}}
 
 In RStudio, you can remove the inline preview in RStudio, and instead send your code output to the console. 
 
@@ -122,13 +99,13 @@ On that options page, uncheck the box shown on the right.
 
 Scroll down and click the "Apply" button for this setting to take effect.
 
-</div>
-<div class = "split2">
+{{< /column >}}
+{{< column name="even-right" >}}
 
 ![](ide-inline.png)
 
-</div>
-</div>
+{{< /column >}}
+{{< /columns  >}}
 
 Your workspace in RStudio then would look something like this:
 

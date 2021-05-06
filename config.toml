@@ -3,7 +3,7 @@ title = "R Markdown"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
+baseurl = "https://heuristic-roentgen-a4400f.netlify.app/"
 
 # Name the theme folder in `themes/`.
 theme = "hugo-graphite"
@@ -15,7 +15,7 @@ relativeurls = false
 languageCode = "en-us"
 description = "An opinionated collection of R packages designed for data science."
 disqusShortname = ""
-ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmarkdown$", "\\.knit\\.md$", "\\.utf8\\.md$", "\\.Rmd$", "_cache$"]
 # below is critical for non-authors to show up in article listing
 preserveTaxonomyNames = true
 # uncomment the next line to disable listing authors
