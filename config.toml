@@ -28,7 +28,6 @@ preserveTaxonomyNames = true
   author = "author"
   category = "categories"
   tag = "tags"
-  format = "formats"
 
 [markup]
   defaultMarkdownHandler = "goldmark"

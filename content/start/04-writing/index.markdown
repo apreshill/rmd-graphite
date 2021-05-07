@@ -2,10 +2,11 @@
 title: "Writing"
 weight: 4
 description: | 
-  Use Markdown to format the narrative text in your `.Rmd`. Try out RStudio's Visual Markdown Editor to start learning.
+  Use Markdown to format the narrative text in your `.Rmd`.
 ---
 
 Everything that is not code in your `.Rmd` is called narrative text, and can be styled with Markdown. Markdown is a plain text formatting syntax, which means everything you see in the file itself can be typed with a normal keyboard. Below is an example:
+
 
 ## Add structure
 
@@ -30,6 +31,12 @@ here add a bibliography, a static image, equation,
 <https://rmd4medicine.netlify.app/book/_book/add-text-with-markdown.html>
 
 this is markdown
+
+## What is Markdown?
+
+-   Markdown is a particular type of markup language.
+
+-   Markup languages are designed produce documents from plain text.
 
 ## Visual Markdown Editor
 

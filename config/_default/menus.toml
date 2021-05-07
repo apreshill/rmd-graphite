@@ -14,6 +14,10 @@
     url = "/explore/"
     weight = 3
 [[main]]
+    name = "Formats"
+    url = "/formats/"
+    weight = 4
+[[main]]
     name = "Community"
     url = "/community/"
-    weight = 4
+    weight = 5

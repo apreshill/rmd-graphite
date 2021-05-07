@@ -2,7 +2,7 @@
 title: "Control code"
 weight: 6
 description: | 
-  Use parameters to re-render the same output with different versions of your data, or depending on different values present in your data.
+  The **knitr** package gives you options for controlling how your source code looks and works.
 ---
 
 ```{r include=FALSE}

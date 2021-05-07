@@ -13,7 +13,7 @@ flexdashboard:
   url_git: https://github.com/rtudio/flexdashboard
   url_docs: 'https://pkgs.rstudio.com/flexdashboard'
   url_cran: https://cloud.r-project.org/web/packages/flexdashboard/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/flexdashboard.png
+  url_hex: ../images/hex/flexdashboard.png
   name: flexdashboard
   base: false
 distill:
@@ -22,7 +22,7 @@ distill:
   url_git: https://github.com/rstudio/distill
   url_docs: 'https://pkgs.rstudio.com/distill'
   url_cran: https://cloud.r-project.org/web/packages/distill/index.html
-  url_hex: 
+  url_hex: ../images/hex/distill.png
   name: distill
 bookdown:
   weight: 30
@@ -30,7 +30,7 @@ bookdown:
   url_git: https://github.com/rstudio/bookdown
   url_docs: 'https://pkgs.rstudio.com/bookdown'
   url_cran: https://cloud.r-project.org/web/packages/bookdown/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/bookdown.png
+  url_hex: ../images/hex/bookdown.png
   name: bookdown
 blogdown:
   weight: 40
@@ -38,7 +38,7 @@ blogdown:
   url_git: https://github.com/rstudio/blogdown
   url_docs: 'https://pkgs.rstudio.com/blogdown'
   url_cran: https://cloud.r-project.org/web/packages/blogdown/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/blogdown.png
+  url_hex: ../images/hex/blogdown.png
   name: blogdown
 blastula:
   weight: 50
@@ -46,7 +46,7 @@ blastula:
   url_git: https://github.com/rstudio/blastula
   url_docs: 'https://pkgs.rstudio.com/blastula'
   url_cran: https://cloud.r-project.org/package=blastula
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/blastula.png
+  url_hex: ../images/hex/blastula.png
   name: blastula
 pkgdown:
   weight: 60
@@ -54,7 +54,7 @@ pkgdown:
   url_git: https://github.com/r-lib/pkgdown
   url_docs: 'https://pkgdown.r-lib.org/'
   url_cran: https://cloud.r-project.org/web/packages/pkgdown/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/pkgdown.png
+  url_hex: ../images/hex/pkgdown.png
   name: pkgdown
 xaringan:
   weight: 70
@@ -62,7 +62,7 @@ xaringan:
   url_git: https://github.com/yihui/xaringan
   url_docs: 'https://bookdown.org/yihui/rmarkdown/xaringan.html'
   url_cran: https://cloud.r-project.org/web/packages/xaringan/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png
+  url_hex: ../images/hex/xaringan.png
   name: xaringan
 learnr:
   weight: 80
@@ -78,7 +78,7 @@ pagedown:
   url_git: https://github.com/rstudio/pagedown
   url_docs: 'https://pagedown.rbind.io/'
   url_cran: https://cloud.r-project.org/web/packages/pagedown/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/pagedown.png
+  url_hex: ../images/hex/pagedown.png
   name: pagedown
 rticles:
   weight: 100

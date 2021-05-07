@@ -2,7 +2,7 @@
 title: "Figures"
 weight: 7
 description: | 
-  Use parameters to re-render the same output with different versions of your data, or depending on different values present in your data.
+  Learn about the specialized **knitr** options for working with figures.
 ---
 
 ```{r include=FALSE}

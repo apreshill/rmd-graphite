@@ -2,7 +2,7 @@
 title: "Basics"
 weight: 1
 description: | 
-  Use R Markdown to develop code and ideas together in one single reproducible `.Rmd` document.
+  Get familiar with the basic ingredients of an `.Rmd` file.
 ---
 
 ```{r include=FALSE}

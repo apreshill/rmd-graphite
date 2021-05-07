@@ -2,13 +2,15 @@
 title: "Figures"
 weight: 7
 description: | 
-  Use parameters to re-render the same output with different versions of your data, or depending on different values present in your data.
+  Learn about the specialized **knitr** options for working with figures.
 ---
 
 
 
 
 Any figure that you create with code in your `.Rmd` document will be inserted inline into your knitted output file. Previously, we learned about how the **knitr** package is responsible for both executing code and knitting the output back into the document. When a code chunk produces a figure, **knitr** has some special code chunk options to control how your figure looks. 
+
+ The author makes the graph, saves it as a file, and then copy and pastes it into the final report. This process relies on manual labor. If the data changes, the author must repeat the entire process to update the graph.
 
 ## Naming figures
 
