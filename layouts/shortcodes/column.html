@@ -1,4 +1,5 @@
-<div class = "{{ .Get "name" | markdownify | emojify }}">
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class = "{{ .Get "name" }}">
   <!-- column content -->
   {{ with .Inner }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
 </div>

@@ -1,21 +1,50 @@
 ---
 title: "Formats"
 layout: standard
+description: R Markdown formats from RStudio
 ---
+
 
 ```{r include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+library(rvest)
+library(tidyverse)
+library(reactable)
 ```
 
-## help me
+```{r}
+# function for making tables
 
-  
-yes hello
+make_tbl <- function(type, group) {
+  df_type <- 
+    df %>% 
+    dplyr::filter({{type}} == {{group}}) 
+  df_type %>% 
+    dplyr::select(link, desc) %>% 
+    reactable(
+      
+      # global reactable options
+      highlight = TRUE,
+      rowStyle = list(cursor = "pointer"),
+      theme = reactableTheme(
+        highlightColor = "#e6f3fc"),
+      
+      # formatting individual columns
+      columns = list(
+        # Using htmltools to render a link
+        link = colDef(cell = function(value, index) {
+          htmltools::tags$a(href = value, target = "_blank", df_type$name[index])
+        },
+        name = "",
+        minWidth = 50),
+        desc = colDef(name = "")
+    ))
+}
+```
 
-{{% youtube w7Ft2ymGmfc %}}
 
 ```{r}
-library(rvest)
+# scraping the current website
 webpage <- read_html("https://rmarkdown.rstudio.com/formats.html")
 names <- html_nodes(webpage, "div.formatTable a.formatTableRow div.formatName") %>%
   html_text()
@@ -25,34 +54,72 @@ desc <- html_nodes(webpage, "div.formatTable a.formatTableRow div.formatDescript
 ```
 
 ```{r}
-library(tidyverse)
+# a taxonomy
+docs <- c("Notebook", "HTML", "PDF", "Word", "ODT", "RTF", "Markdown", "distill")
+prez <- c("ioslides", "reveal.js", "Slidy", "Beamer", "PowerPoint")
+web <- c("flexdashboard", "distill", "bookdown", "blogdown", "Websites")
+print <- c("bookdown", "pagedown", "Word", "PowerPoint", "Tufte Handout")
+pkg_dev <- c("pkgdown", "Package Vignette", "Github Document")
+
 df <- names %>% 
   bind_cols(links) %>% 
   bind_cols(desc) %>% 
-  purrr::set_names(c("name", "link", "desc"))
+  purrr::set_names(c("name", "link", "desc")) %>% 
+  mutate(type = case_when(
+    name %in% docs ~ "Documents",
+    name %in% prez ~ "Presentations",
+    name %in% pkg_dev ~ "Package documentation",
+    name %in% web ~ "Websites")
+    ) %>% 
+  mutate(printable = ifelse(name %in% print, "Printable documents", NA))
 ```
+
+{{% columns class=twocols %}}
+{{% column name=even-left %}}
+
+### Documents
 
 ```{r}
-library(reactable)
 # make the table
-df %>% 
-  select(-name) %>% 
-  reactable(
-    
-    # global reactable options
-    highlight = TRUE,
-    rowStyle = list(cursor = "pointer"),
-    theme = reactableTheme(
-      highlightColor = "#e6f3fc"),
-    
-    # formatting individual columns
-    columns = list(
-      # Using htmltools to render a link
-      link = colDef(cell = function(value, index) {
-        htmltools::tags$a(href = value, target = "_blank", df$name[index])
-      },
-      name = ""),
-      desc = colDef(name = "")
-  )) 
+make_tbl(type, group = "Documents")
 ```
 
+{{% /column %}}
+{{% column name=even-right %}}
+
+### Presentations
+
+```{r}
+make_tbl(type, group = "Presentations")
+```
+
+{{% /column %}}
+{{% /columns %}}
+
+{{% columns class=twocols %}}
+{{% column name=even-left %}}
+
+### Websites
+
+```{r}
+make_tbl(type, group = "Websites")
+```
+
+{{% /column %}}
+{{% column name=even-right %}}
+
+### Package Documentation
+
+```{r}
+make_tbl(type, group = "Package documentation")
+```
+
+{{% /column %}}
+{{% /columns %}}
+
+### Printable documents
+
+```{r}
+# make the table
+make_tbl(printable, group = "Printable documents")
+```
