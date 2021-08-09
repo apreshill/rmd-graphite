@@ -10,7 +10,7 @@ col1:
 col2:
   row2: "bookdown"
   row3: "pkgdown"
-  row4: "xaringan"
+  row4: "rticles"
 ---
 
 Use R Markdown to develop your code and ideas in one reproducible document. Knit plots, tables, and results together with narrative text, and create analyses ready to be shared.
