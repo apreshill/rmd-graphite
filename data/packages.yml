@@ -56,14 +56,14 @@ pkgdown:
   url_cran: https://cloud.r-project.org/web/packages/pkgdown/index.html
   url_hex: ../images/hex/pkgdown.png
   name: pkgdown
-xaringan:
+rticles:
   weight: 70
-  desc: Create HTML5 slides based on the JavaScript library remark.js. 
-  url_git: https://github.com/yihui/xaringan
-  url_docs: 'https://bookdown.org/yihui/rmarkdown/xaringan.html'
-  url_cran: https://cloud.r-project.org/web/packages/xaringan/index.html
-  url_hex: ../images/hex/xaringan.png
-  name: xaringan
+  desc: Write scientific journal articles with custom LaTeX templates for R Markdown.
+  url_git: https://github.com/rstudio/rticles
+  url_docs: 'https://pkgs.rstudio.com/rticles'
+  url_cran: https://cloud.r-project.org/web/packages/rticles/index.html
+  url_hex: ../images/hex/rticles.png
+  name: rticles
 learnr:
   weight: 80
   desc: Turn any R Markdown document into a hands-on, interactive tutorial.  
@@ -80,14 +80,14 @@ pagedown:
   url_cran: https://cloud.r-project.org/web/packages/pagedown/index.html
   url_hex: ../images/hex/pagedown.png
   name: pagedown
-rticles:
+xaringan:
   weight: 100
-  desc: Write scientific journal articles with custom LaTeX templates for R Markdown.
-  url_git: https://github.com/rstudio/rticles
-  url_docs: 'https://bookdown.org/yihui/rmarkdown/journals.html'
-  url_cran: https://cloud.r-project.org/web/packages/rticles/index.html
-  url_hex: ../images/hex/rticles.png
-  name: rticles
+  desc: Create HTML5 slides based on the JavaScript library remark.js. 
+  url_git: https://github.com/yihui/xaringan
+  url_docs: 'https://bookdown.org/yihui/rmarkdown/xaringan.html'
+  url_cran: https://cloud.r-project.org/web/packages/xaringan/index.html
+  url_hex: ../images/hex/xaringan.png
+  name: xaringan
 tufte:
   weight: 110
   desc: Create HTML pages, books, and PDFs with sidenotes, margin figures, and typography in the style of Edward Tufte. 
