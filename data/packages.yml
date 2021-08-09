@@ -86,7 +86,7 @@ rticles:
   url_git: https://github.com/rstudio/rticles
   url_docs: 'https://bookdown.org/yihui/rmarkdown/journals.html'
   url_cran: https://cloud.r-project.org/web/packages/rticles/index.html
-  url_hex: 
+  url_hex: ../images/hex/rticles.png
   name: rticles
 tufte:
   weight: 110
