@@ -15,17 +15,22 @@ library(reactable)
 ```{r}
 # function for making tables
 
-make_tbl <- function(type, group) {
+make_tbl <- function(type) {
   df_type <- 
     df %>% 
-    dplyr::filter({{type}} == {{group}}) 
+    dplyr::filter({{type}} == TRUE) 
+  #df_type <- df
   df_type %>% 
     dplyr::select(link, desc) %>% 
     reactable(
+      onClick = JS("function(rowInfo, colInfo, index) {
+                 window.open(rowInfo.row['link'], '_blank')
+                 }
+                 "
+                 ),
       
       # global reactable options
       highlight = TRUE,
-      rowStyle = list(cursor = "pointer"),
       theme = reactableTheme(
         highlightColor = "#e6f3fc"),
       
@@ -38,7 +43,8 @@ make_tbl <- function(type, group) {
         name = "",
         minWidth = 50),
         desc = colDef(name = "")
-    ))
+      )
+    )
 }
 ```
 
@@ -55,23 +61,25 @@ desc <- html_nodes(webpage, "div.formatTable a.formatTableRow div.formatDescript
 
 ```{r}
 # a taxonomy
-docs <- c("Notebook", "HTML", "PDF", "Word", "ODT", "RTF", "Markdown", "distill")
+page <- c("Notebook", "HTML", "distill", "flexdashboard", "pagedown")
+doc <- c("PDF", "Word", "ODT", "RTF", "Markdown", "pagedown", "rticles")
 prez <- c("ioslides", "reveal.js", "Slidy", "Beamer", "PowerPoint")
-web <- c("flexdashboard", "distill", "bookdown", "blogdown", "Websites")
+site <- c("distill", "bookdown", "blogdown", "Websites")
 print <- c("bookdown", "pagedown", "Word", "PowerPoint", "Tufte Handout")
-pkg_dev <- c("pkgdown", "Package Vignette", "Github Document")
+pkg <- c("pkgdown", "Package Vignette", "Github Document")
+int <- c("flexdashboard", "learnr", "htmlwidgets", "shiny")
 
 df <- names %>% 
   bind_cols(links) %>% 
   bind_cols(desc) %>% 
   purrr::set_names(c("name", "link", "desc")) %>% 
-  mutate(type = case_when(
-    name %in% docs ~ "Documents",
-    name %in% prez ~ "Presentations",
-    name %in% pkg_dev ~ "Package documentation",
-    name %in% web ~ "Websites")
-    ) %>% 
-  mutate(printable = ifelse(name %in% print, "Printable documents", NA))
+  mutate(page = if_else(name %in% page, TRUE, FALSE),
+         doc  = if_else(name %in% doc, TRUE, FALSE),
+         prez = if_else(name %in% prez, TRUE, FALSE),
+         site = if_else(name %in% site, TRUE, FALSE),
+         print= if_else(name %in% print, TRUE, FALSE),
+         pkg  = if_else(name %in% pkg, TRUE, FALSE),
+         int  = if_else(name %in% int, TRUE, FALSE)) 
 ```
 
 {{% columns class=twocols %}}
@@ -81,7 +89,7 @@ df <- names %>%
 
 ```{r}
 # make the table
-make_tbl(type, group = "Documents")
+make_tbl(type = page)
 ```
 
 {{% /column %}}
@@ -90,7 +98,7 @@ make_tbl(type, group = "Documents")
 ### Presentations
 
 ```{r}
-make_tbl(type, group = "Presentations")
+make_tbl(type = prez)
 ```
 
 {{% /column %}}
@@ -99,27 +107,45 @@ make_tbl(type, group = "Presentations")
 {{% columns class=twocols %}}
 {{% column name=even-left %}}
 
-### Websites
+### Webpages
 
 ```{r}
-make_tbl(type, group = "Websites")
+make_tbl(type = page)
 ```
 
 {{% /column %}}
+
 {{% column name=even-right %}}
 
-### Package Documentation
+### Websites
 
 ```{r}
-make_tbl(type, group = "Package documentation")
+make_tbl(type = site)
 ```
 
 {{% /column %}}
 {{% /columns %}}
 
-### Printable documents
+{{% columns class=twocols %}}
+{{% column name=even-left %}}
+
+### Package Documentation
+
+```{r}
+make_tbl(type = pkg)
+```
+
+{{% /column %}}
+
+{{% column name=even-right %}}
+### Printable pages
 
 ```{r}
 # make the table
-make_tbl(printable, group = "Printable documents")
+make_tbl(type = print)
 ```
+
+{{% /column %}}
+{{% /columns %}}
+
+
