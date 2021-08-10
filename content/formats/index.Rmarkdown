@@ -31,6 +31,7 @@ make_tbl <- function(type) {
       
       # global reactable options
       highlight = TRUE,
+      rowStyle = list(cursor = "pointer"),
       theme = reactableTheme(
         highlightColor = "#e6f3fc"),
       
